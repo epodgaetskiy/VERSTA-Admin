@@ -1,0 +1,190 @@
+.header-admin
+	padding: 20px 0
+	height: 25px
+	background-color: white
+	border: 1px solid #edeff2
+	.container-admin
+		position: relative
+	.logo-admin
+		float: left
+		margin-right: 70px
+	.nav-admin
+		float: left
+		margin: 0
+		padding: 0
+		list-style-type: none 
+		display: inline-block
+		li 
+			display: inline-block
+			vertical-align: middle
+			margin-right: 35px
+			&:last-child
+				margin-right: 0
+				position: relative
+				padding-right: 20px
+				cursor: pointer
+				a 
+					border-bottom: 1px dashed #999
+					&:after 
+						content: ''
+						position: absolute
+						top: 50%
+						right: 0
+						display: block
+						width: 8px
+						height: 4px
+						transform: translateY(-50%)
+						background: url("../img/icon-arrow.svg") no-repeat
+
+			a 
+				color: #999
+				font-size: 12px
+				font-weight: 400
+				line-height: 25px
+				text-decoration: none
+
+	.nav-admin--more
+		display: none
+		position: absolute
+		top: 46px
+		left: 50%
+		z-index: 2
+		margin: 0
+		padding: 0
+		list-style-type: none 
+		border: 1px solid #edeff2
+		border-top: none
+		background-color: white
+		li 
+			background-color: white
+			border-bottom: 1px solid #edeff2 
+			a 
+				padding: 0 50px 0 20px
+				color: #999
+				font-size: 12px
+				font-weight: 400
+				line-height: 28px
+				text-decoration: none
+
+	.login-admin
+		float: right
+		display: inline-block
+		font-size: 0
+		margin-top: -5px
+		.login_img
+			display: inline-block
+			vertical-align: top
+			margin-right: 15px
+			border-radius: 50%
+		.login_name
+			display: inline-block
+			vertical-align: top
+			margin: 0
+			padding: 0
+			color: #999
+			font-size: 12px
+			font-weight: 400
+			line-height: 36px
+
+	.settings-block
+		float: right
+		display: inline-block
+		font-size: 0
+		line-height: 25px
+		margin-left: 70px
+		.settings-block_img
+			display: inline-block
+			vertical-align: middle
+			height: 16px
+			margin-right: 35px
+			cursor: pointer
+			&:last-child
+				margin-right: 0
+			&:first-child
+				position: relative
+				.push-count
+					position: absolute
+					top: -6px 
+					right: -6px
+					display: block
+					width: 14px
+					height: 14px
+					border-radius: 50%
+					color: white
+					font-size: 10px
+					font-weight: 600
+					line-height: 14px
+					text-transform: uppercase
+					text-align: center
+					background-color: #f60
+	.pushes_block
+		display: none
+		position: absolute
+		top: 45px
+		right: 0
+		width: 320px
+		box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35)
+		border-top: 1px solid #f60
+		.pushes__container
+			position: relative
+			&:before
+				content: ''
+				position: absolute
+				top: -7px
+				right: 102px
+				display: block
+				z-index: 4
+				width: 13px
+				height: 13px
+				background-color: #f60
+				transform: rotate(45deg)
+		.push-item
+			padding: 15px 20px 15px 50px
+			border: 1px solid #edeff2
+			border-top: none
+			position: relative
+			z-index: 5
+			&:nth-child(2n+1)
+				background-color: #f7f9fc
+			&:nth-child(2n)
+				background-color: white
+			.push--text
+				display: inline-block
+				vertical-align: middle
+				color: #4d4d4d
+				font-size: 13px
+				line-height: 20px
+				font-weight: 400
+				margin-bottom: 4px
+			.push-free-info
+				display: none
+				vertical-align: top
+				margin-right: 10px
+			&.push-free
+				.push-free-info
+					display: inline-block
+			.push--date
+				display: inline-block
+				vertical-align: middle
+				color: #a4afc0
+				font-size: 12px
+				font-weight: 400
+				line-height: 1em
+			.push-edit
+				position: absolute
+				top: 15px
+				right: 20px
+				cursor: pointer
+			.icon-type-push
+				position: absolute
+				top: 15px
+				left: 20px
+				display: block
+				width: 16px
+				height: 16px
+			.icon-push-service
+				background: url("../img/icon-record-service.png") no-repeat
+			.icon-push-tire
+				width: 20px
+				height: 20px
+				background: url("../img/icon-record-tire.png") no-repeat

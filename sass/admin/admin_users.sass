@@ -1,0 +1,276 @@
+.content_header
+	.content_header-title
+		font-size: 18px
+		padding: 33px 0
+		text-transform: uppercase
+		color: $black
+		display: inline-block
+	.content_header-add
+		float: right
+		box-sizing: border-box
+		background: $white
+		color: #4d4d4d
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 8px 20px
+		margin: 14px 0
+		vertical-align: middle
+		img
+			display: inline-block
+			padding-right: 10px
+			padding-top: 7px
+		div
+			display: inline-block
+			vertical-align: top
+			padding-top: 9px
+		&:focus
+			outline: 0
+
+.users_wrapper
+	box-sizing: border-box
+	background: $white
+	border: 1px solid #edeff2
+	border-radius: 5px
+	padding: 25px 40px 0 40px
+	.users
+		padding-bottom: 25px
+		border-bottom: 1px solid #edeff2
+		.users_header
+			display: inline-block
+			color: #bdbdbd
+			&::selection
+				background: transparent
+		.avatar
+			width: 11.6%
+		.name
+			width: 11.3%
+		.surname
+			width: 11.9%
+		.login
+			width: 10.1%
+		.email
+			width: 15.9%
+		.current-passworrd
+			width: 12.9%
+		.new-password
+			width: 13.3%
+		.edit
+			width: 9.7%
+	
+	.users-list
+		.user-item
+			line-height: 40px
+			border-bottom: 1px solid #edeff2
+			&:last-of-type
+				border-bottom: none
+			.user
+				display: inline-block
+				padding: 30px 0
+				vertical-align: top
+				&::selection
+					background: transparent
+			.avatar
+				width: 11.6%
+				img
+					border-radius: 50%
+					vertical-align: middle
+					&::selection
+						background: transparent
+			.name
+				width: 11.3%
+			.surname
+				width: 11.9%
+			.login
+				width: 10.1%
+			.email
+				width: 15.9%
+			.current-password
+				width: 12.9%
+			.new-password
+				width: 13.3%
+			.edit
+				width: 9.7%
+				img
+					vertical-align: middle
+					cursor: pointer
+				.icon-close
+					width: 8px
+					height: 8px
+					float: right
+					padding: 16px 0
+//Add User Popup
+.users-add-popup
+	display: none
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	padding-bottom: 70px
+	.add_content-header
+		background: #f7f9fc
+		text-align: center
+		position: relative
+		padding: 13px 0
+		.modal-close
+			position: absolute
+			right: 20px
+			top: 15px
+			width: 10px
+			height: 10px
+			cursor: pointer
+	.add_content-body
+		width: 75%
+		margin: 0 auto
+		padding-top: 30px
+		.form-image
+			display: inline-block
+			width: 100%
+			font-size: 0
+			.load-image-add
+				display: inline-block
+				width: 120px
+				background: #f7f9fc
+				border-radius: 50%
+				height: 120px
+				margin-right: calc( 100% - 60% - 120px)
+			.load-button
+				display: inline-block
+				width: 60%
+				vertical-align: top
+				padding-top: 40px
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 40px
+					width: 252px
+					height: 44px
+					opacity: 0
+					cursor: pointer
+				button
+					background: #fff
+					padding: 10px 15px
+					border: 1px solid #edeff2
+					border-radius: 5px
+					width: 100%
+					font-size: 14px
+					.upload-icon
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+		label
+			width: 49%
+			display: inline-block
+			font-size: 14px
+			box-sizing: border-box
+			color: #999999
+			&:nth-of-type(2n+1)
+				margin-right: 1%
+			input
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.form-submit-button
+			background: #65b545
+			color: $white
+			text-transform: uppercase
+			border-radius: 5px
+			border: 0
+			padding:  12px 44px
+			font-size: 18px
+			margin-top: 20px
+//Edit Users
+.edit-users
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	padding-bottom: 70px
+	.edit_content-header
+		background: #f7f9fc
+		text-align: center
+		position: relative
+		padding: 13px 0
+		.modal-close
+			position: absolute
+			right: 20px
+			top: 15px
+			width: 10px
+			height: 10px
+			cursor: pointer
+	.edit_content-body
+		width: 75%
+		margin: 0 auto
+		.form-image
+			display: inline-block
+			width: 100%
+			font-size: 0
+			.load-image
+				display: inline-block
+				width: 38%
+				img
+					border-radius: 50%
+			.load-button
+				display: inline-block
+				width: 60%
+				vertical-align: top
+				padding-top: 40px
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 40px
+					width: 252px
+					height: 44px
+					opacity: 0
+					cursor: pointer
+				button
+					background: #fff
+					padding: 10px 15px
+					border: 1px solid #edeff2
+					border-radius: 5px
+					width: 100%
+					font-size: 14px
+					.upload-icon
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+		label
+			width: 49%
+			display: inline-block
+			font-size: 14px
+			box-sizing: border-box
+			color: #999999
+			&:nth-of-type(2n+1)
+				margin-right: 1%
+			input
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.form-submit-button
+			background: #65b545
+			color: $white
+			text-transform: uppercase
+			border-radius: 5px
+			border: 0
+			padding:  12px 44px
+			font-size: 18px
+			margin-top: 20px

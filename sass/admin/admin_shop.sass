@@ -1,0 +1,673 @@
+.container-admin
+	.content_header
+		height: 100px
+		.breadcrumb
+			margin: 30px 0
+			padding: 0
+			list-style: none
+			width: 40%
+			display: inline-block
+			vertical-align: middle
+			font-size: 0
+			li
+				display: inline-block
+				&:not(:first-child)::before
+					content: " > "
+					color: #919199
+					font-size: 12px
+				a
+					text-decoration: none
+					color: #919199
+					font-size: 12px
+
+		.content_header-button
+			float: right
+			box-sizing: border-box
+			background: $white
+			color: #4d4d4d
+			border: 1px solid #edeff2
+			border-radius: 5px
+			padding: 8px 20px
+			margin: 14px 0
+			vertical-align: middle
+			img
+				display: inline-block
+				padding-right: 10px
+				padding-top: 7px
+			div
+				display: inline-block
+				vertical-align: top
+				padding-top: 7px
+			&:focus
+				outline: 0
+			&:last-of-type
+				margin-right: 25px
+
+	.navbar
+		display: inline-block
+		padding: 0
+		margin: 0
+		list-style: none
+		width: 180px
+		float: left
+		margin-right: 10px
+		.navbar_item
+			font-size: 14px
+			font-weight: 300
+			cursor: pointer
+			border-width: 1px  1px 0 1px
+			border-style: solid
+			border-color: #ebebeb
+			&:last-of-type
+				border-bottom: 1px solid #ebebeb
+			.navbar-item-dropdown
+				font-size: 14px
+				font-weight: 300
+				cursor: pointer
+				padding: 8px 32px 6px 32px
+				color: #49494d
+			&.navbar_item-heading
+				.navbar-item-dropdown
+					font-size: 24px
+					font-weight: 300
+			.navbar_item-active
+				background-color: $news_button
+				color: #fff
+			.parts
+				display: block
+				//if not to show the sublist of navbar-item, change the display to next
+				padding: 0
+				list-style: none
+				.part
+					padding: 8px 32px 6px 32px
+					border-width: 1px  0 0 0
+					border-style: solid
+					border-color: #ebebeb
+					position: relative
+					&:last-of-type
+						border-bottom: none
+					background: #fcfcfc
+					color: #000
+					&::before
+						display: block
+						width: 100%
+						position: absolute
+						content: "\2014"
+						top: calc( 50% - 9px)
+						color: #ebebeb
+						left: 0
+
+	.shop_wrapper
+		display: inline-block
+		width: 750px
+		box-sizing: border-box
+		background: $white
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 25px 40px 0 40px
+		.slider_top
+			padding-bottom: 25px
+			border-bottom: 1px solid #edeff2
+			font-size: 0
+			.slider_header
+				display: inline-block
+				color: #bdbdbd
+				font-size: 14px
+				&::selection
+					background: transparent
+			.slider-image
+				width: 20.38%
+				margin-right: 2%
+			.slider-title
+				width: 24.11%
+				margin-right: 2%
+			.slider-new-price
+				width: 15.91%
+				margin-right: 2%
+			.slider-old-price
+				width: 16.95%
+				margin-right: 2%
+			.edit
+				width: 13.92%
+		
+		.slider-list
+			.slider-item
+				border-bottom: 1px solid #edeff2
+				font-size: 0
+				&:last-of-type
+					border-bottom: none
+				.slider
+					display: inline-block
+					padding: 30px 0
+					vertical-align: middle
+					font-size: 14px
+					&::selection
+						background: transparent
+				.slider-image
+					width: 20.38%
+					margin-right: 2%
+					img
+						width: 120px
+						height: 120px
+				.slider-title
+					width: 24.11%
+					margin-right: 2%
+				.slider-new-price
+					width: 15.91%
+					margin-right: 2%
+				.slider-old-price
+					width: 16.95%
+					margin-right: 2%
+				.edit
+					width: 13.92%
+					img
+						vertical-align: middle
+						cursor: pointer
+					.icon-close
+						width: 8px
+						height: 8px
+						float: right
+						padding: 7px 0
+//Add item
+.add_shop
+	display: none
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	padding-bottom: 70px
+	.add_shop_content-header
+		background: #f7f9fc
+		text-align: center
+		position: relative
+		padding: 13px 0
+		.modal-close
+			position: absolute
+			right: 20px
+			top: 15px
+			width: 10px
+			height: 10px
+			cursor: pointer
+	.add_shop_content-body
+		width: 75%
+		margin: 0 auto
+		.form-image
+			display: inline-block
+			width: 100%
+			font-size: 0
+			padding-top: 30px
+			padding-bottom: 20px
+			.load-image
+				display: inline-block
+				width: 45%
+				height: 150px
+				background: #f7f9fc
+				margin-right: 10%
+			.load-button
+				display: inline-block
+				width: 45%
+				vertical-align: top
+				padding-top: 53px
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 53px
+					width: 189px
+					height: 44px
+					opacity: 0
+					cursor: pointer
+				button
+					background: #fff
+					padding: 10px 15px
+					border: 1px solid #edeff2
+					border-radius: 5px
+					width: 100%
+					font-size: 14px
+					.upload-icon
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+		label
+			width: 49%
+			display: inline-block
+			font-size: 14px
+			box-sizing: border-box
+			color: #999999
+			&:nth-of-type(2n+1)
+				margin-right: 1%
+			.container-choise-category,
+			.container-choise-un-category
+				position: relative
+			.choise-category
+				width: 188px
+			.choise-un-category
+				width: 190px
+			.choise-category,
+			.choise-un-category
+				position: relative
+				list-style-type: none
+				display: inline-block
+				vertical-align: top
+				height: 47px
+				line-height: 49px
+				padding-left: 15px
+				background-color: white
+				border: 1px solid #edeff2
+				border-radius: 4px
+				cursor: pointer
+				margin-right: 17px
+				&:after
+					content: ''
+					position: absolute
+					top: 50%
+					right: 10px
+					transform: translateY(-50%)
+					display: block
+					width: 10px
+					height: 5px
+					background: url("../img/icon-select-arrow.png") no-repeat
+				li 
+					color: #4d4d4d
+					font-size: 14px
+					font-weight: 500
+			.choise-category--down
+				width: 203px
+			.choise-un-category--down
+				width: 205px
+			.choise-category--down,
+			.choise-un-category--down
+				display: none
+				position: absolute
+				top: 49px 
+				left: 0
+				line-height: 47px
+				list-style-type: none
+				background-color: white
+				border: 1px solid #edeff2
+				border-top: none
+				border-radius: 4px
+				cursor: pointer
+				&.active--category
+					display: inline-block
+				li 
+					padding-left: 15px
+					color: #4d4d4d
+					font-size: 14px
+					font-weight: 500
+					&:hover 
+						background-color: #a4afc0
+			input,
+			textarea
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.add_shop-title,
+		.add_shop-descr
+			width: 100%
+		.add_shop-descr
+			textarea
+				height: 100px
+		.form-submit-button
+			background: #65b545
+			color: $white
+			text-transform: uppercase
+			border-radius: 5px
+			border: 0
+			padding:  12px 44px
+			font-size: 18px
+			margin-top: 20px
+//Add category
+.shop-add-category
+	display: none
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	.shop-add-category-close
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 10px
+		height: 9px
+		cursor: pointer
+		background: url('../img/icon-close.svg') no-repeat
+	.shop-add-category-main
+		label
+			font-size: 12px
+			line-height: 12px
+			color: #999999
+		.shop-add-category-head
+			background: #f7f9fc
+			p
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				padding: 15px 0
+				text-align: center
+		.category-text
+			padding: 40px 110px 60px 110px	
+			.category-head
+				text-align: center
+				font-size: 0
+				.category
+					padding: 0
+					margin: 0
+					margin-bottom: 30px
+					font-size: 0
+					li
+						display: inline-block
+						width: 50%
+						border-bottom: 2px solid #cfd8dc
+						font-size: 14px
+						line-height: 14px
+						color: #cfd8dc
+						text-transform: uppercase
+						text-decoration: none
+						padding: 0	
+						padding-bottom: 20px
+						cursor: pointer	
+					.active-category
+						border-bottom: 2px solid #65b545
+						color: #4c4c4c
+			.form
+				select
+					font-size: 12px
+					line-height: 12px
+					color: #4c4c4c
+					outline: none
+					border: 1px solid #eef0f3
+					padding: 9px 10px
+					border-radius: 5px
+					width: 140px
+					margin-bottom: 10px
+				.container-choise-category,
+					position: relative
+				.choise-category
+					width: 125px
+				.choise-category
+					position: relative
+					list-style-type: none
+					display: inline-block
+					vertical-align: top
+					height: 36px
+					line-height: 38px
+					padding-left: 15px
+					background-color: white
+					border: 1px solid #edeff2
+					border-radius: 4px
+					cursor: pointer
+					margin-right: 17px
+					&:after
+						content: ''
+						position: absolute
+						top: 50%
+						right: 10px
+						transform: translateY(-50%)
+						display: block
+						width: 10px
+						height: 5px
+						background: url("../img/icon-select-arrow.png") no-repeat
+					li 
+						color: #4d4d4d
+						font-size: 12px
+						font-weight: 500
+				.choise-category--down
+					width: 140px
+				.choise-category--down,
+					display: none
+					position: absolute
+					z-index: 3
+					top: 39px 
+					left: 0
+					line-height: 39px
+					list-style-type: none
+					background-color: white
+					border: 1px solid #edeff2
+					border-top: none
+					border-radius: 4px
+					cursor: pointer
+					&.active--category
+						display: inline-block
+					li 
+						padding-left: 15px
+						color: #4d4d4d
+						font-size: 12px
+						font-weight: 500
+						&:hover 
+							background-color: #a4afc0
+				input[type="text"]
+					font-size: 14px
+					line-height: 14px
+					border: 1px solid #eef0f3
+					height: 13px
+					outline: none
+					padding: 10px 10px
+					border-radius: 5px
+					margin-bottom: 20px
+					color: #4c4c4c
+					width: 95%
+				::-webkit-input-placeholder
+					color: #4c4c4c
+				::-moz-placeholder
+					color: #4c4c4c   
+				:-moz-placeholder  
+					color: #4c4c4c        
+				:-ms-input-placeholder
+					color: #4c4c4c
+				.border-category
+					border-bottom: 1px solid #dddddd
+					margin-bottom: 30px
+					.radio-form-padding
+						padding-top: 5px
+					.radio-form
+						float: left
+						margin-right: 28px
+						&:last-child
+							margin-right: 0
+						label
+							display: inline-block
+							margin-left: 5px
+						input[type="text"]
+							width: 50px
+						input[type="radio"]
+							display: none	
+						input[type="radio"]+label
+							position: relative
+							padding-left: 20px
+							display: inline-block
+							vertical-align: middle
+							cursor: pointer
+							line-height: 28px
+							&:before
+								content: ""
+								display: block
+								position: absolute
+								top: 5px
+								left: 0
+								width: 16px
+								height: 16px
+								background: url("../img/icon-radio-box.png") no-repeat
+						input[type="radio"]
+							&:checked+label:before
+								background: url("../img/icon-radio-checked-box.png") no-repeat
+				.button-add-category
+					display: inline-block
+					font-size: 12px
+					line-height: 12px
+					padding: 11px 30px
+					border-radius: 5px		
+					text-transform: uppercase
+					border: none
+					outline: none
+					color: #ffffff
+					width: 160px
+					background: #65b545
+//Edit shop
+.edit_shop
+	display: none
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	padding-bottom: 70px
+	.edit_shop_content-header
+		background: #f7f9fc
+		text-align: center
+		position: relative
+		padding: 13px 0
+		.modal-close
+			position: absolute
+			right: 20px
+			top: 15px
+			width: 10px
+			height: 10px
+			cursor: pointer
+	.edit_shop_content-body
+		width: 75%
+		margin: 0 auto
+		.form-image
+			display: inline-block
+			width: 100%
+			font-size: 0
+			padding-top: 30px
+			padding-bottom: 20px
+			.load-image
+				display: inline-block
+				width: 55%
+			.load-button
+				display: inline-block
+				width: 45%
+				vertical-align: top
+				padding-top: 40px
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 40px
+					width: 189px
+					height: 44px
+					opacity: 0
+					cursor: pointer
+				button
+					background: #fff
+					padding: 10px 15px
+					border: 1px solid #edeff2
+					border-radius: 5px
+					width: 100%
+					font-size: 14px
+					.upload-icon
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+		label
+			width: 49%
+			display: inline-block
+			font-size: 14px
+			box-sizing: border-box
+			color: #999999
+			&:nth-of-type(2n+1)
+				margin-right: 1%
+			.container-choise-category,
+			.container-choise-un-category
+				position: relative
+			.choise-category
+				width: 188px
+			.choise-un-category
+				width: 190px
+			.choise-category,
+			.choise-un-category
+				position: relative
+				list-style-type: none
+				display: inline-block
+				vertical-align: top
+				height: 47px
+				line-height: 49px
+				padding-left: 15px
+				background-color: white
+				border: 1px solid #edeff2
+				border-radius: 4px
+				cursor: pointer
+				margin-right: 17px
+				&:after
+					content: ''
+					position: absolute
+					top: 50%
+					right: 10px
+					transform: translateY(-50%)
+					display: block
+					width: 10px
+					height: 5px
+					background: url("../img/icon-select-arrow.png") no-repeat
+				li 
+					color: #4d4d4d
+					font-size: 14px
+					font-weight: 500
+			.choise-category--down
+				width: 203px
+			.choise-un-category--down
+				width: 205px
+			.choise-category--down,
+			.choise-un-category--down
+				display: none
+				position: absolute
+				top: 49px 
+				left: 0
+				line-height: 47px
+				list-style-type: none
+				background-color: white
+				border: 1px solid #edeff2
+				border-top: none
+				border-radius: 4px
+				cursor: pointer
+				&.active--category
+					display: inline-block
+				li 
+					padding-left: 15px
+					color: #4d4d4d
+					font-size: 14px
+					font-weight: 500
+					&:hover 
+						background-color: #a4afc0
+			input
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.edit_shop-title,
+		.edit_shop-descr
+			width: 100%
+		.edit_shop-descr
+			input
+				height: 120px
+		.form-submit-button
+			background: #65b545
+			color: $white
+			text-transform: uppercase
+			border-radius: 5px
+			border: 0
+			padding:  12px 44px
+			font-size: 18px
+			margin-top: 20px

@@ -1,0 +1,309 @@
+.container-admin
+	.content_header
+		.content_header-title
+			font-size: 18px
+			padding: 33px 0
+			text-transform: uppercase
+			color: $black
+			display: inline-block
+		.content_header-button
+			float: right
+			box-sizing: border-box
+			background: $white
+			color: #4d4d4d
+			border: 1px solid #edeff2
+			border-radius: 5px
+			padding: 8px 20px
+			margin: 14px 0
+			vertical-align: middle
+			img
+				display: inline-block
+				padding-right: 10px
+				padding-top: 7px
+			div
+				display: inline-block
+				vertical-align: top
+				padding-top: 7px
+			&:focus
+				outline: 0
+		.tire
+			margin-right: 20px
+		.content_header-button-active
+			background: #65b545
+			color: $white
+	
+	.slider_wrapper
+		box-sizing: border-box
+		background: $white
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 25px 40px 0 40px
+		.slider_top
+			padding-bottom: 25px
+			border-bottom: 1px solid #edeff2
+			font-size: 0
+			.slider_header
+				display: inline-block
+				color: #bdbdbd
+				font-size: 14px
+				&::selection
+					background: transparent
+			.slider-image
+				width: 15.44%
+				margin-right: 2%
+			.slider-descr
+				width: 32.88%
+				margin-right: 2%
+			.slider-new-price
+				width: 15.44%
+				margin-right: 2%
+			.slider-old-price
+				width: 15.44%
+				margin-right: 2%
+			.edit
+				width: 12.79%
+		
+		.slider-list
+			.slider-item
+				border-bottom: 1px solid #edeff2
+				font-size: 0
+				&:last-of-type
+					border-bottom: none
+				.slider
+					display: inline-block
+					padding: 30px 0
+					vertical-align: middle
+					font-size: 14px
+					&::selection
+						background: transparent
+				.slider-image
+					width: 15.44%
+					margin-right: 2%
+					img
+						width: 120px
+						height: 120px
+				.slider-descr
+					width: 32.88%
+					margin-right: 2%
+				.slider-new-price
+					width: 15.44%
+					margin-right: 2%
+				.slider-old-price
+					width: 15.44%
+					margin-right: 2%
+				.edit
+					width: 12.79%
+					img
+						vertical-align: middle
+						cursor: pointer
+					.icon-close
+						width: 8px
+						height: 8px
+						float: right
+						margin: 7px 0
+//Add Slider Popup
+.add_slider
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	padding-bottom: 70px
+	.add_slider_content-header
+		background: #f7f9fc
+		text-align: center
+		position: relative
+		padding: 13px 0
+		.modal-close
+			position: absolute
+			right: 20px
+			top: 15px
+			width: 10px
+			height: 10px
+			cursor: pointer
+	.add_slider_content-body
+		width: 75%
+		margin: 0 auto
+		padding-top: 30px
+		.form-image
+			display: inline-block
+			width: 100%
+			font-size: 0
+			margin-bottom: 30px
+			.load-image
+				display: inline-block
+				width: 50%
+				margin-right: 10%
+				background: #f7f9fc
+				height: 180px
+			.load-button
+				display: inline-block
+				width: 40%
+				vertical-align: top
+				margin-top: 68px
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 0
+					width: 168px
+					height: 44px
+					opacity: 0
+					cursor: pointer
+				button
+					background: #fff
+					padding: 10px 15px
+					border: 1px solid #edeff2
+					border-radius: 5px
+					width: 100%
+					font-size: 14px
+					.upload-icon
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+		label
+			width: 49%
+			display: inline-block
+			font-size: 14px
+			box-sizing: border-box
+			color: #999999
+			&:nth-of-type(2n)
+				margin-right: 1%		
+			input
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.add_slider-descr
+			width: 100% !important
+			margin-bottom: 20px
+			textarea
+				height: 100px
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.form-submit-button
+			background: #65b545
+			color: $white
+			text-transform: uppercase
+			border-radius: 5px
+			border: 0
+			padding:  12px 44px
+			font-size: 18px
+			margin-top: 20px
+//Edit slider 
+.edit_slider
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	padding-bottom: 70px
+	.edit_slider_content-header
+		background: #f7f9fc
+		text-align: center
+		position: relative
+		padding: 13px 0
+		.modal-close
+			position: absolute
+			right: 20px
+			top: 15px
+			width: 10px
+			height: 10px
+			cursor: pointer
+	.edit_slider_content-body
+		width: 75%
+		margin: 0 auto
+		padding-top: 30px
+		.form-image
+			display: inline-block
+			width: 100%
+			font-size: 0
+			margin-bottom: 30px
+			.load-image
+				display: inline-block
+				width: 170px
+				margin-right: 50px
+				img 
+					width: 170px
+					height: 155px
+					background-color: #f7f9fc
+			.load-button
+				display: inline-block
+				width: 40%
+				vertical-align: top
+				margin-top: 55px
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 0
+					width: 168px
+					height: 44px
+					opacity: 0
+					cursor: pointer
+				button
+					background: #fff
+					padding: 10px 15px
+					border: 1px solid #edeff2
+					border-radius: 5px
+					width: 100%
+					font-size: 14px
+					.upload-icon
+						display: inline-block
+						vertical-align: middle
+						margin-right: 10px
+		label
+			width: 49%
+			display: inline-block
+			font-size: 14px
+			box-sizing: border-box
+			color: #999999
+			&:nth-of-type(2n)
+				margin-right: 1%		
+			input
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.edit_slider-descr
+			width: 100% !important
+			margin-bottom: 20px
+			textarea
+				height: 100px
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.form-submit-button
+			background: #65b545
+			color: $white
+			text-transform: uppercase
+			border-radius: 5px
+			border: 0
+			padding:  12px 44px
+			font-size: 18px
+			margin-top: 20px

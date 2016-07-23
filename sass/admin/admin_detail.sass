@@ -1,0 +1,598 @@
+.container-admin
+	.content_header
+		.content_header-title
+			font-size: 18px
+			padding: 33px 0
+			text-transform: uppercase
+			color: $black
+			display: inline-block
+		.content_header-add
+			float: right
+			box-sizing: border-box
+			background: $white
+			color: #4d4d4d
+			border: 1px solid #edeff2
+			border-radius: 5px
+			padding: 8px 20px
+			margin: 14px 0
+			vertical-align: middle
+			img
+				display: inline-block
+				padding-right: 10px
+				padding-top: 7px
+			div
+				display: inline-block
+				vertical-align: top
+				padding-top: 9px
+			&:focus
+				outline: 0
+	
+	.detail_wrapper
+		box-sizing: border-box
+		background: $white
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 25px 40px 0 40px
+		.detail_top
+			padding-bottom: 25px
+			border-bottom: 1px solid #edeff2
+			font-size: 0
+			.detail_header
+				display: inline-block
+				color: #bdbdbd
+				font-size: 14px
+				&::selection
+					background: transparent
+			.detail-date
+				width: 17.44%
+			.detail-name
+				width: 17.44%
+			.detail-phone
+				width: 17.44%
+			.detail-one
+				width: 24.09%
+			.detail-status
+				width: 21.25%
+			.edit
+				width: 1.97%
+		
+		.details-list
+			.detail-item
+				border-bottom: 1px solid #edeff2
+				font-size: 0
+				&:last-of-type
+					border-bottom: none
+				.detail
+					display: inline-block
+					padding: 30px 0
+					vertical-align: middle
+					font-size: 14px
+					&::selection
+						background: transparent
+				.detail-date
+					width: 15.44%
+					margin-right: 2%
+				.detail-name
+					width: 15.44%
+					margin-right: 2%
+				.detail-phone
+					width: 15.44%
+					margin-right: 2%
+				.detail-one
+					width: 22.09%
+					margin-right: 2%
+					ol
+						list-style-type: decimal-leading-zero
+						padding-left: 23px
+				.detail-status
+					display: inline-block
+					width: 18.25%
+					margin-right: 3%
+					.status-confirmed
+						display: inline-block
+						margin-left: 10px
+						width: 10px
+						height: 10px
+						border-radius: 50%
+						background: green
+					.status-process
+						display: inline-block
+						margin-left: 10px
+						width: 10px
+						height: 10px
+						border-radius: 50%
+						background: #ffbb50
+					.status-cancelled
+						display: inline-block
+						margin-left: 10px
+						width: 10px
+						height: 10px
+						border-radius: 50%
+						background: #ff6600
+				.edit
+					width: 1.97%
+					img
+						vertical-align: middle
+						cursor: pointer
+//Add Detail Popup
+.detail-add-popup
+	display: none
+	width: 860px
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	.detail-add-popup-close
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 10px
+		height: 9px
+		cursor: pointer
+		background: url('../img/icon-close.svg') no-repeat
+	.record-popup-main
+		label
+			font-size: 12px
+			line-height: 12px
+			color: #999999
+		.record-popup-head
+			background: #f7f9fc
+			p
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				padding: 15px 0
+				text-align: center
+		form
+			padding: 10px 40px 35px 40px
+			input 
+				width: 108px
+				height: 34px
+				outline: none 
+				background-color: white
+				border: 1px solid #edeff2
+				border-radius: 4px
+				color: #474747
+				font-size: 12px
+				font-weight: 500
+				padding: 0 15px
+				margin-right: 20px
+				margin-bottom: 30px
+				&:focus 
+					outline: none
+				&::-webkit-input-placeholder
+					color: #474747
+				&::-moz-placeholder
+					color: #474747  
+				&:-moz-placeholder  
+					color: #474747        
+				&:-ms-input-placeholder
+					color: #474747
+			.mobile
+				margin-right: 22px
+			.number-car-1,
+			.number-car-2
+				margin-right: 0
+				color: #4d4d4d    
+				&::-webkit-input-placeholder
+					color: #c7cacf
+				&::-moz-placeholder
+					color: #c7cacf 
+				&:-moz-placeholder  
+					color: #c7cacf       
+				&:-ms-input-placeholder
+					color: #c7cacf
+			.number-car-1
+				width: 60px
+			.number-car-2
+				width: 25px
+				padding: 0 5px 
+				margin-right: 0
+				background: url("../img/number-rus.png") no-repeat 100% 50%
+				&:focus
+					background: none
+			.choice-row-2
+				margin-bottom: 30px
+			.choise-range-time
+				text-align: center
+				margin-bottom: 30px
+				p 
+					display: inline-block
+					color: #474747
+					font-size: 12px
+					font-weight: 400
+					line-height: 28px
+				input 
+					width: 18px
+					padding: 0 10px
+					margin: 0
+					&::-webkit-input-placeholder
+						color: #c7cacf
+					&::-moz-placeholder
+						color: #c7cacf 
+					&:-moz-placeholder  
+						color: #c7cacf       
+					&:-ms-input-placeholder
+						color: #c7cacf
+				.first-choise
+					margin-right: 10px
+				.second-choise
+					margin-left: 45px
+					margin-right: 10px
+			.year
+				width: 38px
+			.vin 
+				width: 193px
+				margin-right: 0
+			.choise-select--container
+				display: inline-block
+				vertical-align: top
+				position: relative
+			.choise-side
+				position: relative
+				list-style-type: none
+				display: inline-block
+				vertical-align: top
+				width: 105px
+				height: 34px
+				line-height: 34px
+				padding-left: 15px
+				background-color: white
+				border: 1px solid #edeff2
+				border-radius: 4px
+				cursor: pointer
+				&:after
+					content: ''
+					position: absolute
+					top: 50%
+					right: 10px
+					transform: translateY(-50%)
+					display: block
+					width: 10px
+					height: 5px
+					background: url("../img/icon-select-arrow.png") no-repeat
+				li 
+					color: #474747
+					font-size: 12px
+					font-weight: 400
+			.choise-side--down
+				display: none
+				position: absolute
+				top: 36px 
+				left: 0
+				width: 120px
+				line-height: 34px
+				list-style-type: none
+				background-color: white
+				border: 1px solid #edeff2
+				border-top: none
+				border-radius: 4px
+				cursor: pointer
+				&.active--side
+					display: inline-block
+				li 
+					padding-left: 15px
+					color: #474747
+					font-size: 12px
+					font-weight: 400
+					&:hover 
+						background-color: #a4afc0
+			.record__work--container
+				.record__work
+					width: calc( 100% - 32px )
+					color: #4d4d4d 
+					margin-bottom: 15px  
+					&::-webkit-input-placeholder
+						color: #c7cacf
+					&::-moz-placeholder
+						color: #c7cacf 
+					&:-moz-placeholder  
+						color: #c7cacf       
+					&:-ms-input-placeholder
+						color: #c7cacf
+			.record-functional_container
+				.record-add--work
+					float: left
+					cursor: pointer
+					img
+						display: inline-block
+						vertical-align: top
+						width: 32px
+						height: 32px
+						margin-right: 15px	
+					p
+						display: inline-block
+						vertical-align: top
+						margin-top: 8px
+						color: #f60
+						font-size: 14px
+						font-weight: 300
+						line-height: 16px
+						border-bottom: 1px dashed #f60
+				.record_save
+					float: right
+					width: 175px
+					label 
+						color: #65b545
+						font-size: 12px
+						font-weight: 400
+						margin-bottom: 40px
+					input[type="checkbox"]
+						display: none	
+					input[type="checkbox"]+label
+						position: relative
+						padding-left: 25px
+						display: inline-block
+						vertical-align: middle
+						cursor: pointer
+						line-height: 28px
+						&:before
+							content: ""
+							display: block
+							position: absolute
+							top: 5px
+							left: 0
+							width: 16px
+							height: 16px
+							background: url("../img/icon-free-radio-box.png") no-repeat
+					input[type="checkbox"]
+						&:checked+label:before
+							background: url("../img/icon-free-radio-checked-box.png") no-repeat
+					.record-btn--save
+						margin: 0
+						padding: 0
+						border: none 
+						outline: none 
+						width: 100%
+						height: 34px
+						line-height: 34px
+						background-color: #65b545
+						border-radius: 4px
+						color: white
+						font-size: 12px
+						font-weight: 500
+						text-transform: uppercase
+//Edit Detail Popup
+.detail-edit-popup
+	display: none
+	width: 860px
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	.detail-edit-popup-close
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 10px
+		height: 9px
+		cursor: pointer
+		background: url('../img/icon-close.svg') no-repeat
+	.record-popup-main
+		label
+			font-size: 12px
+			line-height: 12px
+			color: #999999
+		.record-popup-head
+			background: #f7f9fc
+			p
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				padding: 15px 0
+				text-align: center
+		form
+			padding: 10px 40px 35px 40px
+			input 
+				width: 108px
+				height: 34px
+				outline: none 
+				background-color: white
+				border: 1px solid #edeff2
+				border-radius: 4px
+				color: #474747
+				font-size: 12px
+				font-weight: 500
+				padding: 0 15px
+				margin-right: 20px
+				margin-bottom: 30px
+				&:focus 
+					outline: none
+				&::-webkit-input-placeholder
+					color: #474747
+				&::-moz-placeholder
+					color: #474747  
+				&:-moz-placeholder  
+					color: #474747        
+				&:-ms-input-placeholder
+					color: #474747
+			.mobile
+				margin-right: 22px
+			.number-car-1,
+			.number-car-2
+				margin-right: 0
+				color: #4d4d4d    
+				&::-webkit-input-placeholder
+					color: #c7cacf
+				&::-moz-placeholder
+					color: #c7cacf 
+				&:-moz-placeholder  
+					color: #c7cacf       
+				&:-ms-input-placeholder
+					color: #c7cacf
+			.number-car-1
+				width: 60px
+			.number-car-2
+				width: 25px
+				padding: 0 5px 
+				margin-right: 0
+				background: url("../img/number-rus.png") no-repeat 100% 50%
+				&:focus
+					background: none
+			.choice-row-2
+				margin-bottom: 30px
+			.choise-range-time
+				text-align: center
+				margin-bottom: 30px
+				p 
+					display: inline-block
+					color: #474747
+					font-size: 12px
+					font-weight: 400
+					line-height: 28px
+				input 
+					width: 18px
+					padding: 0 10px
+					margin: 0
+					&::-webkit-input-placeholder
+						color: #c7cacf
+					&::-moz-placeholder
+						color: #c7cacf 
+					&:-moz-placeholder  
+						color: #c7cacf       
+					&:-ms-input-placeholder
+						color: #c7cacf
+				.first-choise
+					margin-right: 10px
+				.second-choise
+					margin-left: 45px
+					margin-right: 10px
+			.year
+				width: 38px
+			.vin 
+				width: 193px
+				margin-right: 0
+			.choise-select--container
+				display: inline-block
+				vertical-align: top
+				position: relative
+			.choise-side
+				position: relative
+				list-style-type: none
+				display: inline-block
+				vertical-align: top
+				width: 105px
+				height: 34px
+				line-height: 34px
+				padding-left: 15px
+				background-color: white
+				border: 1px solid #edeff2
+				border-radius: 4px
+				cursor: pointer
+				&:after
+					content: ''
+					position: absolute
+					top: 50%
+					right: 10px
+					transform: translateY(-50%)
+					display: block
+					width: 10px
+					height: 5px
+					background: url("../img/icon-select-arrow.png") no-repeat
+				li 
+					color: #474747
+					font-size: 12px
+					font-weight: 400
+			.choise-side--down
+				display: none
+				position: absolute
+				top: 36px 
+				left: 0
+				width: 120px
+				line-height: 34px
+				list-style-type: none
+				background-color: white
+				border: 1px solid #edeff2
+				border-top: none
+				border-radius: 4px
+				cursor: pointer
+				&.active--side
+					display: inline-block
+				li 
+					padding-left: 15px
+					color: #474747
+					font-size: 12px
+					font-weight: 400
+					&:hover 
+						background-color: #a4afc0
+			.record__work--container
+				.record__work
+					width: calc( 100% - 32px )
+					color: #4d4d4d 
+					margin-bottom: 15px  
+					&::-webkit-input-placeholder
+						color: #c7cacf
+					&::-moz-placeholder
+						color: #c7cacf 
+					&:-moz-placeholder  
+						color: #c7cacf       
+					&:-ms-input-placeholder
+						color: #c7cacf
+			.record-functional_container
+				.record-add--work
+					float: left
+					cursor: pointer
+					img
+						display: inline-block
+						vertical-align: top
+						width: 32px
+						height: 32px
+						margin-right: 15px	
+					p
+						display: inline-block
+						vertical-align: top
+						margin-top: 8px
+						color: #f60
+						font-size: 14px
+						font-weight: 300
+						line-height: 16px
+						border-bottom: 1px dashed #f60
+				.record_save
+					float: right
+					width: 175px
+					label 
+						color: #65b545
+						font-size: 12px
+						font-weight: 400
+						margin-bottom: 40px
+					input[type="checkbox"]
+						display: none	
+					input[type="checkbox"]+label
+						position: relative
+						padding-left: 25px
+						display: inline-block
+						vertical-align: middle
+						cursor: pointer
+						line-height: 28px
+						&:before
+							content: ""
+							display: block
+							position: absolute
+							top: 5px
+							left: 0
+							width: 16px
+							height: 16px
+							background: url("../img/icon-free-radio-box.png") no-repeat
+					input[type="checkbox"]
+						&:checked+label:before
+							background: url("../img/icon-free-radio-checked-box.png") no-repeat
+					.record-btn--save
+						margin: 0
+						padding: 0
+						border: none 
+						outline: none 
+						width: 100%
+						height: 34px
+						line-height: 34px
+						background-color: #65b545
+						border-radius: 4px
+						color: white
+						font-size: 12px
+						font-weight: 500
+						text-transform: uppercase

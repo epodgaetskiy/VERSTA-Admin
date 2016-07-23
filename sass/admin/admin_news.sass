@@ -1,0 +1,376 @@
+.container-admin
+	.content-admin-wrapper
+		padding-bottom: 90px
+	.content_header
+		.content_header-title
+			font-size: 18px
+			padding: 33px 0
+			text-transform: uppercase
+			color: $black
+			display: inline-block
+		.content_header-button
+			float: right
+			box-sizing: border-box
+			background: $white
+			color: #4d4d4d
+			border: 1px solid #edeff2
+			border-radius: 5px
+			padding: 8px 20px
+			margin: 14px 0
+			vertical-align: middle
+			img
+				display: inline-block
+				padding-right: 10px
+				padding-top: 7px
+			div
+				display: inline-block
+				vertical-align: top
+				padding-top: 7px
+			&:focus
+				outline: 0
+		.tire
+			margin-right: 20px
+		.content_header-button-active
+			background: #65b545
+			color: $white
+	
+	.news_wrapper
+		box-sizing: border-box
+		background: $white
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 25px 40px 0 40px
+		.news_top
+			padding-bottom: 25px
+			border-bottom: 1px solid #edeff2
+			font-size: 0
+			.news_header
+				display: inline-block
+				color: #bdbdbd
+				font-size: 14px
+				&::selection
+					background: transparent
+			.date
+				width: 12.08%
+			.image
+				width: 12.65%
+			.heading
+				width: 22.93%
+			.content
+				width: 40.67%
+			.edit
+				width: 9.65%
+		
+		.news-list
+			.news-item
+				border-bottom: 1px solid #edeff2
+				font-size: 0
+				&:last-of-type
+					border-bottom: none
+				.news
+					display: inline-block
+					padding: 30px 0
+					vertical-align: middle
+					font-size: 14px
+					&::selection
+						background: transparent
+				.date
+					width: 12.08%
+				.image
+					width: 12.65%
+					img
+						width: 80px
+						height: 80px
+				.heading
+					width: 20.93%
+					margin-right: 2%
+				.content
+					width: 38.67%
+					margin-right: 4%
+				.edit
+					width: 9.65%
+					img
+						vertical-align: middle
+						cursor: pointer
+					.icon-close
+						width: 8px
+						height: 8px
+						float: right
+						padding: 7px 0
+
+//Add News Popup
+.news-popup
+	display: none
+	width: 860px
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	.news-popup-close
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 10px
+		height: 9px
+		cursor: pointer
+		background: url('../img/icon-close.svg') no-repeat
+	.news-popup-main
+		label
+			font-size: 12px
+			line-height: 12px
+			color: #999999
+		.news-popup-head
+			background: #f7f9fc
+			p
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				padding: 15px 0
+				text-align: center
+		form
+			padding: 10px 40px 35px 40px
+			.column-form
+				p
+					text-align: left
+				input
+					font-size: 12px
+					line-height: 12px
+					color: #4c4c4c
+					padding: 10px
+					outline: none
+					border: 1px solid #edeff2
+					border-radius: 5px
+					margin-bottom: 15px
+				::-webkit-input-placeholder
+					color: #4c4c4c
+				::-moz-placeholder
+					color: #4c4c4c   
+				:-moz-placeholder  
+					color: #4c4c4c        
+				:-ms-input-placeholder
+					color: #4c4c4c
+				.column-1
+					float: left
+					width: 15%
+					input[id="date"]
+						width: 100%
+				.column-2
+					float: right
+					width: 75%
+					input[id="header"]
+						width: 95%
+				.column-3
+					float: left
+					width: 100%
+					textarea
+						width: 96%
+						min-height: 180px
+						font-size: 12px
+						line-height: 12px
+						color: #4c4c4c
+						padding: 10px
+						outline: none
+						border: 1px solid #edeff2
+						border-radius: 5px
+						margin-bottom: 30px
+			.news--add-img
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 32px
+					left: 160px
+					width: 201px
+					height: 36px
+					opacity: 0
+					cursor: pointer
+					z-index: 2
+			.news__img
+				float: left
+				width: 140px
+				height: 100px
+				background-color: #f7f9fc
+			.button-load
+				float: left
+				position: relative
+				margin: 32px 0 0 20px
+				display: inline-block
+				padding: 11px 27px 11px 40px
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				border: 1px solid #edeff2
+				border-radius: 5px
+				background: #ffffff
+				outline: none
+				text-align: left
+				&:before
+					position: absolute
+					content: ""
+					background: url("../img/icon-load.png") no-repeat
+					width: 13px
+					height: 14px
+					top: 10px
+					left: 14px
+			.news--add-btn
+				margin-top: 15px
+				.link-clear
+					float: left
+					font-size: 12px
+					line-height: 12px
+					color: #999999
+					padding-top: 17px
+				.news-popup-button
+					float: right
+					display: inline-block
+					font-size: 12px
+					line-height: 12px
+					padding: 11px 30px
+					border-radius: 5px		
+					text-transform: uppercase
+					border: none
+					outline: none
+					color: #ffffff
+					width: 170px
+					background: #65b545
+					margin-bottom: 10px
+//Add News Popup
+.news-edit-popup
+	display: none
+	width: 860px
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	.news-edit-popup-close
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 10px
+		height: 9px
+		cursor: pointer
+		background: url('../img/icon-close.svg') no-repeat
+	.news-popup-main
+		label
+			font-size: 12px
+			line-height: 12px
+			color: #999999
+		.news-popup-head
+			background: #f7f9fc
+			p
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				padding: 15px 0
+				text-align: center
+		form
+			padding: 10px 40px 35px 40px
+			.column-form
+				p
+					text-align: left
+				input
+					font-size: 12px
+					line-height: 12px
+					color: #4c4c4c
+					padding: 10px
+					outline: none
+					border: 1px solid #edeff2
+					border-radius: 5px
+					margin-bottom: 15px
+				::-webkit-input-placeholder
+					color: #4c4c4c
+				::-moz-placeholder
+					color: #4c4c4c   
+				:-moz-placeholder  
+					color: #4c4c4c        
+				:-ms-input-placeholder
+					color: #4c4c4c
+				.column-1
+					float: left
+					width: 15%
+					input[id="date"]
+						width: 100%
+				.column-2
+					float: right
+					width: 75%
+					input[id="header"]
+						width: 95%
+				.column-3
+					float: left
+					width: 100%
+					textarea
+						width: 96%
+						min-height: 180px
+						font-size: 12px
+						line-height: 12px
+						color: #4c4c4c
+						padding: 10px
+						outline: none
+						border: 1px solid #edeff2
+						border-radius: 5px
+						margin-bottom: 30px
+			.news--add-img
+				position: relative
+				input[type="file"]
+					position: absolute
+					top: 32px
+					left: 160px
+					width: 201px
+					height: 36px
+					opacity: 0
+					cursor: pointer
+					z-index: 2
+			.news__img
+				float: left
+				width: 140px
+				height: 100px
+				background-color: #f7f9fc
+			.button-load
+				float: left
+				position: relative
+				margin: 32px 0 0 20px
+				display: inline-block
+				padding: 11px 27px 11px 40px
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				border: 1px solid #edeff2
+				border-radius: 5px
+				background: #ffffff
+				outline: none
+				text-align: left
+				&:before
+					position: absolute
+					content: ""
+					background: url("../img/icon-load.png") no-repeat
+					width: 13px
+					height: 14px
+					top: 10px
+					left: 14px
+			.news--add-btn
+				margin-top: 15px
+				.link-clear
+					float: left
+					font-size: 12px
+					line-height: 12px
+					color: #999999
+					padding-top: 17px
+				.news-popup-button
+					float: right
+					display: inline-block
+					font-size: 12px
+					line-height: 12px
+					padding: 11px 30px
+					border-radius: 5px		
+					text-transform: uppercase
+					border: none
+					outline: none
+					color: #ffffff
+					width: 170px
+					background: #65b545
+					margin-bottom: 10px

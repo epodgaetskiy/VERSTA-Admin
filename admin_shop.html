@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=970px">
+	
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>	
+
+	<header class="header-admin">
+		<div class="container-admin clearfix">
+			<img src="img/icon-logo.png" alt="" class="logo-admin" width="100" height="25">
+			<ul class="nav-admin">
+				<li><a href="admin_enroll.html">Запись</a></li>
+				<li><a href="admin_detail.html">Запчасти</a></li>
+				<li><a href="admin_shop.html">Магазин</a></li>
+				<li><a href="admin_news.html">Статьи</a></li>
+				<li class="nav-admin-more--go"><a href="">Еще</a></li>
+			</ul>
+			<ul class="nav-admin--more">
+				<li><a href="admin_slider.html">Акции</a></li>
+				<li><a href="admin_price.html">Цены на услуги</a></li>
+				<li><a href="admin_banner.html">Баннер</a></li>
+				<li><a href="admin_users.html">Пользователи</a></li>
+			</ul>
+			<div class="settings-block">
+				<div class="settings-block_img">
+					<img src="img/icon-push.svg" alt="" class="settings_push">
+					<p class="push-count">2</p>
+				</div>
+				<div class="settings-block_img">
+					<a href="admin_settings.html"><img src="img/icon-settings.svg" alt="" class="settings_go"></a>
+				</div>
+				<div class="settings-block_img">
+					<img src="img/icon-exit.svg" alt="" class="settings_exit">
+				</div>
+			</div>
+			<div class="login-admin">
+				<img src="img/icon-avatar.png" alt="" class="login_img" width="36" height="36">
+				<p class="login_name">Сергей Зацепин</p>
+			</div>
+			<div class="pushes_block">
+				<div class="pushes__container">
+					<div class="push-item">
+						<i class="icon-type-push icon-push-service"></i>
+						<img src="img/icon-pencil.png" alt="" class="push-edit" width="16" height="16">
+						<img src="img/icon-record-free.png" alt="" class="push-free-info">
+						<p class="push--text">Антон + 7 987 654 32 10</p><br>
+						<p class="push--date">25 марта 10:00</p>
+					</div>
+					<div class="push-item push-free">
+						<i class="icon-type-push icon-push-tire"></i>
+						<img src="img/icon-pencil.png" alt="" class="push-edit" width="16" height="16">
+						<img src="img/icon-record-free.png" alt="" class="push-free-info">
+						<p class="push--text">Антон + 7 987 654 32 10</p><br>
+						<p class="push--date">25 марта 10:00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-admin">
+		<div class="content-admin-wrapper">
+			<div class="content_header">
+				<ul class="breadcrumb">
+					<li><a href="#">Главная&nbsp;</a></li>
+					<li><a href="#">Магазин&nbsp;</a></li>
+					<li><a href="#">Запчасти</a></li>
+				</ul>
+				<button class="content_header-button add--item"><img src="img/icon_add-new.png"><div>Добавить товар</div></button>
+				<button class="content_header-button add--category"><img src="img/icon_add-new.png"><div>Добавить категорию / подкатегорию</div></button>
+			</div>
+			
+			<ul class="navbar">
+				<li class="navbar_item navbar_item-heading">
+					<div class="navbar-item-dropdown">Магазин</div>
+				</li>
+				<li class="navbar_item">
+					<div class="navbar-item-dropdown">Диски</div>
+				</li>
+				<li class="navbar_item">
+					<div class="navbar-item-dropdown">Диски</div>
+				</li>
+				<li class="navbar_item">
+					<div class="navbar-item-dropdown">Аксессуары</div>
+				</li>
+				<li class="navbar_item">
+					<div class="navbar-item-dropdown">Автохимия</div>
+				</li>
+				<li class="navbar_item">
+					<div class="navbar-item-dropdown navbar_item-active">Запчасти</div>
+					<ul class="parts">
+						<li class="part">Амортизаторы</li>
+						<li class="part">Бампер</li>
+						<li class="part">Тормозные колодки</li>
+						<li class="part">Амортизаторы</li>
+						<li class="part">Бампера</li>
+						<li class="part">Тормозные колодки</li>
+					</ul>
+				</li>
+				<li class="navbar_item">
+					<div class="navbar-item-dropdown">Коврики</div>
+				</li>
+			</ul>
+			<div class="shop_wrapper">
+				<div class="slider_top">
+					<div class="slider_header slider-image">Изображение</div>
+					<div class="slider_header slider-title">Название</div>
+					<div class="slider_header slider-new-price">Цена</div>
+					<div class="slider_header slider-old-price">Старая цена</div>
+					<div class="slider_header edit">Редактировать</div>
+				</div>
+				<div class="slider-list">
+					<div class="slider-item">
+						<div class="slider slider-image"><img src="img/slide-img-mobile.png"></div>
+						<div class="slider slider-title">Спортивное моторное масло G-Energy для наилучшей работы вашего двигателя</div>
+						<div class="slider slider-new-price">4 300 руб.</div>
+						<div class="slider slider-old-price">5 170 руб.</div>
+						<div class="slider edit">
+							<div class="edit-button-shop">
+								<img class="icon-edit" src="img/icon-pencil.png">
+								<img class="icon-close" src="img/icon-close.png">
+							</div>
+						</div>
+					</div>
+					<div class="slider-item">
+						<div class="slider slider-image"><img src="img/slide-img-mobile.png"></div>
+						<div class="slider slider-title">Спортивное моторное масло G-Energy для наилучшей работы вашего двигателя</div>
+						<div class="slider slider-new-price">4 300 руб.</div>
+						<div class="slider slider-old-price">5 170 руб.</div>
+						<div class="slider edit">
+							<div class="edit-button-shop">
+								<img class="icon-edit" src="img/icon-pencil.png">
+								<img class="icon-close" src="img/icon-close.png">
+							</div>
+						</div>
+					</div>
+					<div class="slider-item">
+						<div class="slider slider-image"><img src="img/slide-img-mobile.png"></div>
+						<div class="slider slider-title">Спортивное моторное масло G-Energy для наилучшей работы вашего двигателя</div>
+						<div class="slider slider-new-price">4 300 руб.</div>
+						<div class="slider slider-old-price">5 170 руб.</div>
+						<div class="slider edit">
+							<div class="edit-button-shop">
+								<img class="icon-edit" src="img/icon-pencil.png">
+								<img class="icon-close" src="img/icon-close.png">
+							</div>
+						</div>
+					</div>
+					<div class="slider-item">
+						<div class="slider slider-image"><img src="img/slide-img-mobile.png"></div>
+						<div class="slider slider-title">Спортивное моторное масло G-Energy для наилучшей работы вашего двигателя</div>
+						<div class="slider slider-new-price">4 300 руб.</div>
+						<div class="slider slider-old-price">5 170 руб.</div>
+						<div class="slider edit">
+							<div class="edit-button-shop">
+								<img class="icon-edit" src="img/icon-pencil.png">
+								<img class="icon-close" src="img/icon-close.png">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shadow"></div>
+	<!-- Add item -->
+	<div class="add_shop">
+		<div class="add_shop_content-header">
+			<span class="header-title">Добавить товар</span>
+			<div class="modal-close">
+				<img src="img/icon-close.png" class="modal-add-shop-close-icon">
+			</div>
+		</div>
+		<div class="add_shop_content-body">
+			<form class="body_form">
+				<div class="form-image">
+					<div class="load-image">
+					</div>
+					<div class="load-button">
+						<input type="file">
+						<button><img src="img/upload-button.png" class="upload-icon">Загрузить</button>
+					</div>
+				</div>
+				<label class="add_shop-title">Название<input type="text"></label>
+				<label class="add_shop-descr">Описание <textarea name=""></textarea></label>
+				<label for="">Цена<input type="text"></label>
+				<label for="">Старая цена<input type="text"></label>
+				<label for="">Категория
+					<div class="container-choise-category">
+						<ul class="choise-category">
+							<li class="choise-item--text">Выбрать</li>
+						</ul>
+						<ul class="choise-category--down">
+							<li>Диски</li>
+							<li>Амортизаторы</li>
+							<li>Тормоза</li>
+						</ul>
+					</div>
+				</label>
+				<label for="">Подкатегория
+					<div class="container-choise-un-category">
+						<ul class="choise-un-category">
+							<li class="choise-item-un--text">Выбрать</li>
+						</ul>
+						<ul class="choise-un-category--down">
+							<li>Диски</li>
+							<li>Амортизаторы</li>
+							<li>Тормоза</li>
+							<li>Бампера</li>
+						</ul>
+					</div>
+				</label>
+				<input type="submit" class="form-submit-button" value="Добавить">
+			</form>
+		</div>
+	</div>
+	<!-- Add category -->
+	<div class="shop-add-category">
+		<div class="shop-add-category-close"></div>
+		<div class="shop-add-category-main">
+			<div class="shop-add-category-head">
+				<p>Добавить категорию / подкатегорию</p>
+			</div>
+			<div class="category-text">
+				<div class="category-head">
+					<ul class="category">
+						<li class="category-name">Категория</li>
+						<li class="subcategory-name active-category">Подкатегория</li>
+					</ul>
+				</div>
+				<div class="form form-subcategory">
+					<form method="POST">
+						<label for="category-id">
+							Категория
+						</label><br>
+						<div class="container-choise-category">
+							<ul class="choise-category">
+								<li class="choise-item--text">Выбрать</li>
+							</ul>
+							<ul class="choise-category--down">
+								<li>Диски</li>
+								<li>Амортизаторы</li>
+								<li>Тормоза</li>
+								<li>Бампера</li>
+							</ul>
+						</div>
+						<br>
+						<label for="name-id">
+							Название
+						</label><br>
+						<input type="text" id="name-id" name="name-category"><br>
+					
+						<div class="border-category clearfix">
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="first-subcategory" name="category-count" value="first-subcategory" checked>
+								<label for="first-subcategory">Первой</label>
+							</div>
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="last-subcategory" name="category-count" value="last-subcategory">
+								<label for="last-subcategory">Последней</label>
+							</div>
+							<div class="radio-form radio-form-text">
+								<input type="text" id="count" name="category-score">
+								<label for="count">По счету</label>
+							</div>
+						</div>
+						<button class="button-add-category">Добавить</button>			
+					</form>
+				</div>
+				<div class="form form-category hidden">
+					<form method="POST">
+						<label for="name-id">
+							Название
+						</label><br>
+						<input type="text" id="name-id" name="name-category"><br>
+					
+						<div class="border-category clearfix">
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="first-category" name="category-count" value="first-category" checked>
+								<label for="first-category">Первой</label>
+							</div>
+							<div class="radio-form radio-form-padding">
+								<input type="radio" id="last-category" name="category-count" value="last-category">
+								<label for="last-category">Последней</label>
+							</div>
+							<div class="radio-form radio-form-text">
+								<input type="text" id="count" name="category-score">
+								<label for="count">По счету</label>
+							</div>
+						</div>
+						<button class="button-add-category">Добавить</button>			
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Edit shop -->
+	<div class="edit_shop">
+		<div class="edit_shop_content-header">
+			<span class="header-title">Редактирование товара</span>
+			<div class="modal-close">
+				<img src="img/icon-close.png" class="modal-edit-shop-close-icon">
+			</div>
+		</div>
+		<div class="edit_shop_content-body">
+			<form class="body_form">
+				<div class="form-image">
+					<div class="load-image">
+						<img src="img/slide-img-mobile.png" >
+					</div>
+					<div class="load-button">
+						<input type="file">
+						<button><img src="img/upload-button.png" class="upload-icon">Загрузить</button>
+					</div>
+				</div>
+				<label class="edit_shop-title">Название<input type="text" required></label>
+				<label class="edit_shop-descr">Описание<input type="text" required></label>
+				<label for="">Цена<input type="text" required></label>
+				<label for="">Старая цена<input type="text" required></label>
+				<label for="">Категория
+					<div class="container-choise-category">
+						<ul class="choise-category">
+							<li class="choise-item--text">Выбрать</li>
+						</ul>
+						<ul class="choise-category--down">
+							<li>Диски</li>
+							<li>Амортизаторы</li>
+							<li>Тормоза</li>
+						</ul>
+					</div>
+				</label>
+				<label for="">Подкатегория
+					<div class="container-choise-un-category">
+						<ul class="choise-un-category">
+							<li class="choise-item-un--text">Выбрать</li>
+						</ul>
+						<ul class="choise-un-category--down">
+							<li>Диски</li>
+							<li>Амортизаторы</li>
+							<li>Тормоза</li>
+							<li>Бампера</li>
+						</ul>
+					</div>
+				</label>
+				<input type="submit" class="form-submit-button" value="Сохранить">
+			</form>
+		</div>
+	</div>
+	<!-- Remove element -->
+	<div class="sure-remove">
+		<div class="sure-slider-close"></div>
+		<div class="sure-slider-main">
+			<div class="sure-slider-head">
+				<p>Подтверждение удаления</p>
+			</div>
+			<p class="sure-slider-text">Вы уверены, что хотите удалить?</p>
+			<div class="sure-slider-buttons">
+				<button class="sure-slider-button accept">Подтвердить</button>
+				<button class="sure-slider-button delete">Отмена</button>
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/admin.js"></script>
+	
+</body>
+</html>

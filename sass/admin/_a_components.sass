@@ -1,0 +1,67 @@
+.shadow
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	width: 100% 
+	height: 100%
+	background-color: rgba(0, 0, 0, .75) 
+
+.active-shadow
+	display: block
+	z-index: 1
+
+.active 
+	display: block !important
+
+//Remove element
+.sure-remove
+	display: none
+	text-align: center
+	width: 560px
+	background: #ffffff
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	.sure-slider-close
+		position: absolute
+		top: 15px
+		right: 15px
+		width: 10px
+		height: 9px
+		cursor: pointer
+		background: url('../img/icon-close.svg') no-repeat
+	.sure-slider-main
+		.sure-slider-head
+			background: #f7f9fc
+			p
+				font-size: 12px
+				line-height: 12px
+				color: #4c4c4c
+				padding: 15px 0
+		.sure-slider-text
+			font-size: 18px
+			line-height: 18px
+			color: #4c4c4c
+			padding: 50px 0 40px 0
+		.sure-slider-buttons
+			margin-bottom: 60px
+			.sure-slider-button
+				display: inline-block
+				font-size: 12px
+				line-height: 12px
+				padding: 11px 30px
+				border-radius: 5px		
+				text-transform: uppercase
+				border: none
+				outline: none
+				color: #ffffff
+				width: 170px
+			.accept
+				background: #65b545
+				margin-right: 20px
+			.delete
+				background: #999999

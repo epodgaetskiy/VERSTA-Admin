@@ -1,0 +1,166 @@
+.container-admin
+	.content_header
+		.content_header-title
+			font-size: 18px
+			padding: 33px 0
+			text-transform: uppercase
+			color: $black
+			display: inline-block
+		.content_header-button-service
+			float: right
+			box-sizing: border-box
+			background: $white
+			color: #4d4d4d
+			border: 1px solid #edeff2
+			border-radius: 5px
+			padding: 8px 20px
+			margin: 14px 0
+			vertical-align: middle
+			div
+				display: inline-block
+				vertical-align: top
+				padding-top: 7px
+			&:focus
+				outline: 0
+			&.tire
+				margin-right: 20px
+			.icon-header-button
+				display: inline-block
+				width: 20px
+				height: 20px
+				margin-right: 10px
+				margin-top: 7px
+			.icon-car
+				background: url("../img/icon-auto-service.png") no-repeat
+			.icon-tire
+				background: url("../img/icon-tire.png") no-repeat
+			&.active
+				background: #65b545
+				color: $white
+				.icon-car
+					background: url("../img/icon-auto-service-active.png") no-repeat
+				.icon-tire
+					background: url("../img/icon-tire-active.png") no-repeat
+					
+	.services_wrapper
+		box-sizing: border-box
+		background: $white
+		border: 1px solid #edeff2
+		border-radius: 5px
+		padding: 25px 40px 0 40px
+		.services
+			padding-bottom: 25px
+			border-bottom: 1px solid #edeff2
+			font-size: 0
+			.services_header
+				display: inline-block
+				color: #bdbdbd
+				font-size: 14px
+				&::selection
+					background: transparent
+			.number
+				width: 7.1%
+			.title
+				width: 23.25%
+			.description
+				width: 39.86%
+			.price
+				width: 18.02%
+			.edit
+				width: 9.7%
+		
+		.services-list
+			.service-item
+				border-bottom: 1px solid #edeff2
+				font-size: 0
+				&:last-of-type
+					border-bottom: none
+				.service
+					display: inline-block
+					padding: 30px 0
+					vertical-align: middle
+					font-size: 14px
+					&::selection
+						background: transparent
+				.number
+					width: 7.1%
+				.title
+					width: 23.25%
+				.description
+					width: 37.86%
+					margin-right: 2%
+				.price
+					width: 18.02%
+				.edit
+					width: 9.7%
+					img
+						vertical-align: middle
+						cursor: pointer
+					.icon-close
+						width: 8px
+						height: 8px
+						float: right
+						padding: 7px 0
+//Edit Price Popup
+.edit_price
+	display: none
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	-webkit-transform: translate(-50%, -50%)
+	z-index: 2
+	background-color: #fefefe
+	width: 560px
+	padding-bottom: 70px
+	.edit_price_content-header
+		background: #f7f9fc
+		text-align: center
+		position: relative
+		padding: 13px 0
+		.modal-close
+			position: absolute
+			right: 20px
+			top: 15px
+			width: 10px
+			height: 10px
+			cursor: pointer
+	.edit_price_content-body
+		width: 75%
+		margin: 0 auto
+		padding-top: 20px
+		label
+			width: 100%
+			display: inline-block
+			font-size: 14px
+			box-sizing: border-box
+			color: #999999
+			margin-top: 10px
+			&:nth-of-type(2n+1)
+				margin-right: 1%
+			input,
+			textarea
+				width: 100%
+				box-sizing: border-box
+				border: 1px solid #edeff2
+				padding: 14px 15px
+				border-radius: 5px
+				color: #000
+				&:focus
+					outline: none
+		.edit_price-newPrice
+			width: 45%
+		.edit_price-descr
+			height: 150px
+			textarea
+				height: 120px
+
+		.form-submit-button
+			background: #65b545
+			color: $white
+			text-transform: uppercase
+			border-radius: 5px
+			border: 0
+			padding:  12px 44px
+			font-size: 18px
+			margin-top: 20px

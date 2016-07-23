@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=970px">
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<header class="header-admin">
+		<div class="container-admin clearfix">
+			<img src="img/icon-logo.png" alt="" class="logo-admin" width="100" height="25">
+			<ul class="nav-admin">
+				<li><a href="admin_enroll.html">Запись</a></li>
+				<li><a href="admin_detail.html">Запчасти</a></li>
+				<li><a href="admin_shop.html">Магазин</a></li>
+				<li><a href="admin_news.html">Статьи</a></li>
+				<li class="nav-admin-more--go"><a href="">Еще</a></li>
+			</ul>
+			<ul class="nav-admin--more">
+				<li><a href="admin_slider.html">Акции</a></li>
+				<li><a href="admin_price.html">Цены на услуги</a></li>
+				<li><a href="admin_banner.html">Баннер</a></li>
+				<li><a href="admin_users.html">Пользователи</a></li>
+			</ul>
+			<div class="settings-block">
+				<div class="settings-block_img">
+					<img src="img/icon-push.svg" alt="" class="settings_push">
+					<p class="push-count">2</p>
+				</div>
+				<div class="settings-block_img">
+					<a href="admin_settings.html"><img src="img/icon-settings.svg" alt="" class="settings_go"></a>
+				</div>
+				<div class="settings-block_img">
+					<img src="img/icon-exit.svg" alt="" class="settings_exit">
+				</div>
+			</div>
+			<div class="login-admin">
+				<img src="img/icon-avatar.png" alt="" class="login_img" width="36" height="36">
+				<p class="login_name">Сергей Зацепин</p>
+			</div>
+			<div class="pushes_block">
+				<div class="pushes__container">
+					<div class="push-item">
+						<i class="icon-type-push icon-push-service"></i>
+						<img src="img/icon-pencil.png" alt="" class="push-edit" width="16" height="16">
+						<img src="img/icon-record-free.png" alt="" class="push-free-info">
+						<p class="push--text">Антон + 7 987 654 32 10</p><br>
+						<p class="push--date">25 марта 10:00</p>
+					</div>
+					<div class="push-item push-free">
+						<i class="icon-type-push icon-push-tire"></i>
+						<img src="img/icon-pencil.png" alt="" class="push-edit" width="16" height="16">
+						<img src="img/icon-record-free.png" alt="" class="push-free-info">
+						<p class="push--text">Антон + 7 987 654 32 10</p><br>
+						<p class="push--date">25 марта 10:00</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="admin-head">
+		<div class="container-admin">
+			<h2>Настройки</h2>
+		</div>
+	</div>
+	<div class="container-admin">
+		<div class="settings">
+			<div class="container-inline clearfix">
+				<form method="POST">
+					<div class="settings-column clearfix">
+						<div class="settings-column-1">
+							<label for="work-hours">Время работы c</label><br>
+							<label for="car-wash">Автосервис</label><br>
+							<label for="tire">Шиномонтаж</label><br>
+							<label for="lift">Подъемник</label><br>
+						</div>
+						<div class="settings-column-2">	
+							<input type="text" id="work-hours" name="with-hour-work" placeholder="00">
+							<span>ч.</span>
+							<input type="text" id="work-hours" name="with-minutes-work" placeholder="00">
+							<span>мин.</span><br>
+							<input type="text" id="car-wash" name="minutes-service">
+							<span>мин.</span><br>
+							<input type="text" id="tire" name="minutes-tire">
+							<span>мин.</span><br>
+							<div class="container-choise-category">
+								<ul class="choise-category">
+									<li class="choise-item--text">Верста 1</li>
+								</ul>
+								<ul class="choise-category--down">
+									<li>Верста 1</li>
+									<li>Верста 2</li>
+								</ul>
+							</div><br>
+							<input type="checkbox" name="agreement-info" id="agreement-info" checked>
+							<label class="label-size" for="agreement-info">Предоплата</label><br>
+						</div>
+						<div class="settings-column-3">
+							<span>До</span>
+							<input type="text" id="work-hours" name="to-hour-work" placeholder="00">
+							<span>ч.</span>
+							<input type="text" id="work-hours" name="to-minutes-work" placeholder="00">
+							<span>мин.</span><br>
+							<button class="added-button">Добавить</button>
+						</div>
+					</div>
+					<button class="saved-button">Сохранить</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="hidden"></div>
+
+	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="js/admin.js"></script>
+	
+</body>
+</html>

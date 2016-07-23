@@ -1,0 +1,37 @@
+[{
+	"price": 1200,
+	"url": "data/tire/img/1.jpg",
+	"name": "Снятие / Установка"	
+}, {
+	"price": 1300,
+	"url": "data/tire/img/2.jpg",
+	"name": "Мойка колес"
+}, {
+	"price": 1000,
+	"url": "data/tire/img/3.jpg",
+	"name": "Разборка сборка колеса"
+}, {
+	"price": 1150,
+	"url": "data/tire/img/4.jpg",
+	"name": "Балансировка колеса"
+}, {
+	"price": 1230,
+	"url": "data/tire/img/5.jpg",
+	"name": "Ремонт колеса"
+}, {
+	"price": 800,
+	"url": "data/tire/img/6.jpg",
+	"name": "Ошиповка колес"
+}, {
+	"price": 290,
+	"url": "data/tire/img/7.jpg",
+	"name": "Ремонт боковых порезов"
+}, {
+	"price": 2000,
+	"url": "data/tire/img/8.jpg",
+	"name": "Подкачка колес"
+}, {
+	"price": 1600,
+	"url": "data/tire/img/9.jpg",
+	"name": "Подкачка колес азотом"
+}]
