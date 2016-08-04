@@ -42,6 +42,7 @@
 				<li><a href="admin_price.html">Цены на услуги</a></li>
 				<li><a href="admin_banner.html">Баннер</a></li>
 				<li><a href="admin_users.html">Пользователи</a></li>
+				<li><a href="admin_feedback.html">Отзывы</a></li>
 			</ul>
 			<div class="settings-block">
 				<div class="settings-block_img">
@@ -82,9 +83,9 @@
 	
 	<div class="container-admin">
 		<div class="content_header--enroll clearfix">
-			<button class="content_header-button-service active"><i class="icon-header-button loc icon-loc"></i><div>Верста 1</div></button>
-			<button class="content_header-button-service"><i class="icon-header-button loc icon-loc"></i><div>Верста 2</div></button>
-			<button class="content_header-add add-enroll-record"><img src="img/icon_add-new.png"><div>Добавить заказ</div></button>
+			<button class="content_header-button-service active"><i class="icon-header-button loc icon-loc"></i><span>Верста 1</span></button>
+			<button class="content_header-button-service"><i class="icon-header-button loc icon-loc"></i><span>Верста 2</span></button>
+			<button class="content_header-add add-enroll-record"><img src="img/icon_add-new.png" alt=""><span>Добавить заказ</span></button>
 		</div>
 		<div class="choice-row-2 clearfix">
 			<p class="choice-name">Календарь записи</p>
@@ -127,18 +128,23 @@
 					</th>
 					<th>
 						<p>Подъемник А</p>
+						<img src="img/icon-cancel.png" alt="" class="icon-close-pod">
 					</th>
 					<th>
 						<p>Подъемник Б</p>
+						<img src="img/icon-cancel.png" alt="" class="icon-close-pod">
 					</th>
 					<th>
 						<p>Подъемник В</p>
+						<img src="img/icon-cancel.png" alt="" class="icon-close-pod">
 					</th>
 					<th>
 						<p>Подъемник Г</p>
+						<img src="img/icon-cancel.png" alt="" class="icon-close-pod">
 					</th>
 					<th>
 						<p>Подъемник Д</p>
+						<img src="img/icon-cancel.png" alt="" class="icon-close-pod">
 					</th>
 				</tr>
 				<tr class="cell--write">
@@ -361,7 +367,21 @@
 			</form>
 		</div>
 	</div>
-
+	<!-- Remove element -->
+	<div class="sure-remove">
+		<div class="sure-slider-close"></div>
+		<div class="sure-slider-main">
+			<div class="sure-slider-head">
+				<p>Подтверждение удаления</p>
+			</div>
+			<p class="sure-slider-text">Вы уверены, что хотите удалить?</p>
+			<div class="sure-slider-buttons">
+				<button class="sure-slider-button accept">Подтвердить</button>
+				<button class="sure-slider-button delete">Отмена</button>
+			</div>
+		</div>
+	</div>
+	
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>

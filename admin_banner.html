@@ -42,6 +42,7 @@
 				<li><a href="admin_price.html">Цены на услуги</a></li>
 				<li><a href="admin_banner.html">Баннер</a></li>
 				<li><a href="admin_users.html">Пользователи</a></li>
+				<li><a href="admin_feedback.html">Отзывы</a></li>
 			</ul>
 			<div class="settings-block">
 				<div class="settings-block_img">
@@ -89,26 +90,35 @@
 				<h2 class="load-banner-title">Загрузить баннер</h2>
 				<div class="load-banner">
 					<div class="load-banner-img">
-						<img src="img/banner.png" class="banner-img">
+						<img src="img/banner.png" class="banner-img" alt="">
 					</div>		
 					<input type="file">
 					<button class="load-img-button">
-						<div>
-							<img src="img/upload-button.png">
-							<div>Загрузить изображение</div>
-						</div>
+						<img src="img/upload-button.png" alt="">
+						<span>Загрузить изображение</span>
 					</button>
 					<button class="load-link-button">
-						<div>
-							<img src="img/play-button.png">
-							<div>Ссылка на страницу</div>
-						</div>
+						<img src="img/play-button.png" alt="">
+						<span>Ссылка на страницу</span>
 					</button>
 					<button class="load-save-button">Сохранить</button>
 				</div>
 			</div>
 		</div>
-
+	</div>
+	<!-- add link -->
+	<div class="shadow"></div>
+	<div class="link-edit-popup">
+		<div class="link-edit-popup-close"></div>
+		<div class="record-popup-main">
+			<div class="record-popup-head">
+				<p>Ссылка на страницу</p>
+			</div>
+			<form method="POST">
+				<input type="text" placeholder="Ссылка">
+				<button class="record-btn--save">Сохранить</button>
+			</form>
+		</div>
 	</div>
 
 	<!--[if lt IE 9]>

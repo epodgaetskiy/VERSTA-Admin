@@ -41,6 +41,7 @@
 				<li><a href="admin_price.html">Цены на услуги</a></li>
 				<li><a href="admin_banner.html">Баннер</a></li>
 				<li><a href="admin_users.html">Пользователи</a></li>
+				<li><a href="admin_feedback.html">Отзывы</a></li>
 			</ul>
 			<div class="settings-block">
 				<div class="settings-block_img">
@@ -89,19 +90,17 @@
 			<form method="POST">
 				<div class="feedback-forms clearfix">
 					<label>Имя<br>
-					<input type="text" name="name" class="name" placeholder="Иван" required></label>
+					<input type="text" name="name" class="name" placeholder="Иван"></label>
 					<label>Фамилия<br>
-					<input type="text" name="surname" class="surname" placeholder="Петров" required></label>
+					<input type="text" name="surname" class="surname" placeholder="Петров"></label>
 					<label>Телефон<br>
-					<input type="text" name="phone" class="phone" placeholder="+7(912) 1234 56 78" required></label>
+					<input type="text" name="phone" class="phone" placeholder="+7(912) 1234 56 78"></label>
 					<label>E-mail<br>
-					<input type="text" name="email" class="email" placeholder="ivan_07@gmail.com" required></label>
+					<input type="text" name="email" class="email" placeholder="ivan_07@gmail.com"></label>
 				</div>
 				<div class="feedback-main-text">
 					<h2>Отзыв</h2>
-					<div class="feedback-text">
-						<p>Начальная стадия проведения исследования без оглядки на авторитеты ускоряет сублимированный conversion rate, опираясь на опыт западных коллег. Объемная скидка все еще интересна для многих. Служба маркетинга компании уравновешивает целевой сегмент рынка. Стратегическое планирование как всегда непредсказуемо. Один из признанных классиков маркетинга Ф.Котлер определяет это так: косвенная реклама неверно ускоряет комплексный контент, осознав маркетинг как часть производства. Партисипативное планирование, на первый взгляд, продуцирует рекламный клаттер. Начальная стадия проведения исследования без оглядки на авторитеты ускоряет сублимированный conversion rate, опираясь на опыт западных коллег. Объемная скидка все еще интересна для многих. Служба маркетинга компании уравновешивает целевой сегмент рынка. Стратегическое планирование как всегда непредсказуемо. Один из признанных классиков маркетинга Ф.Котлер определяет это так: косвенная реклама неверно ускоряет комплексный контент, осознав маркетинг как часть производства. Партисипативное планирование, на первый взгляд, продуцирует рекламный клаттер.</p>
-					</div>
+					<textarea class="feedback-text"></textarea>
 				</div>
 				<div class="feedblack-buttons">
 					<button class="feedback-button locate">Разместить</button>
@@ -114,19 +113,17 @@
 			<form method="POST">
 				<div class="feedback-forms clearfix">
 					<label>Имя<br>
-					<input type="text" name="name" class="name" placeholder="Иван" required></label>
+					<input type="text" name="name" class="name" placeholder="Иван"></label>
 					<label>Фамилия<br>
-					<input type="text" name="surname" class="surname" placeholder="Петров" required></label>
+					<input type="text" name="surname" class="surname" placeholder="Петров"></label>
 					<label>Телефон<br>
-					<input type="text" name="phone" class="phone" placeholder="+7(912) 1234 56 78" required></label>
+					<input type="text" name="phone" class="phone" placeholder="+7(912) 1234 56 78"></label>
 					<label>E-mail<br>
-					<input type="text" name="email" class="email" placeholder="ivan_07@gmail.com" required></label>
+					<input type="text" name="email" class="email" placeholder="ivan_07@gmail.com"></label>
 				</div>
 				<div class="feedback-main-text">
 					<h2>Отзыв</h2>
-					<div class="feedback-text">
-						<p>Начальная стадия проведения исследования без оглядки на авторитеты ускоряет сублимированный conversion rate, опираясь на опыт западных коллег. Объемная скидка все еще интересна для многих. Служба маркетинга компании уравновешивает целевой сегмент рынка. Стратегическое планирование как всегда непредсказуемо. Один из признанных классиков маркетинга Ф.Котлер определяет это так: косвенная реклама неверно ускоряет комплексный контент, осознав маркетинг как часть производства. Партисипативное планирование, на первый взгляд, продуцирует рекламный клаттер. Начальная стадия проведения исследования без оглядки на авторитеты ускоряет сублимированный conversion rate, опираясь на опыт западных коллег. Объемная скидка все еще интересна для многих. Служба маркетинга компании уравновешивает целевой сегмент рынка. Стратегическое планирование как всегда непредсказуемо. Один из признанных классиков маркетинга Ф.Котлер определяет это так: косвенная реклама неверно ускоряет комплексный контент, осознав маркетинг как часть производства. Партисипативное планирование, на первый взгляд, продуцирует рекламный клаттер.</p>
-					</div>
+					<textarea class="feedback-text"></textarea>
 				</div>
 				<div class="feedblack-buttons">
 					<button class="feedback-button locate">Разместить</button>
@@ -134,14 +131,22 @@
 				</div>
 			</form>
 		</div>
-		
 	</div>
-
-
-
-	<div class="hidden"></div>
-
-	
+	<div class="shadow"></div>
+	<!-- Remove element -->
+	<div class="sure-remove">
+		<div class="sure-slider-close"></div>
+		<div class="sure-slider-main">
+			<div class="sure-slider-head">
+				<p>Подтверждение удаления</p>
+			</div>
+			<p class="sure-slider-text">Вы уверены, что хотите удалить?</p>
+			<div class="sure-slider-buttons">
+				<button class="sure-slider-button accept">Подтвердить</button>
+				<button class="sure-slider-button delete">Отмена</button>
+			</div>
+		</div>
+	</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
