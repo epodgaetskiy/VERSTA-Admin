@@ -55,9 +55,13 @@
 		border: 1px solid #edeff2
 		border-top: none
 		background-color: white
+		&.show-more
+			display: block
 		li 
 			background-color: white
 			border-bottom: 1px solid #edeff2 
+			&:hover 
+				background-color: #f7f9fc
 			a 
 				padding: 0 50px 0 20px
 				color: #999
@@ -111,7 +115,7 @@
 					height: 14px
 					border-radius: 50%
 					color: white
-					font-size: 10px
+					font-size: 8px
 					font-weight: 600
 					line-height: 14px
 					text-transform: uppercase
@@ -144,10 +148,9 @@
 			border-top: none
 			position: relative
 			z-index: 5
-			&:nth-child(2n+1)
-				background-color: #f7f9fc
-			&:nth-child(2n)
-				background-color: white
+			background-color: white
+			&:hover
+				background-color: #f7f9fc			
 			.push--text
 				display: inline-block
 				vertical-align: middle

@@ -17,25 +17,45 @@ $(".subcategory-name").click(function(e) {
 
 })
 
-$(".header-admin .nav-admin-more--go").click(function(e) {
-	e.preventDefault();
-	var adminMore = $(".header-admin .nav-admin--more");
-	if (!(adminMore.hasClass("show-more"))) {
-		adminMore.fadeIn(600);
-		adminMore.addClass("show-more");
-	} else {
-		adminMore.fadeOut(600);
-		adminMore.removeClass("show-more");
-	}
+// $(".header-admin .nav-admin-more--go").click(function(e) {
+// 	e.preventDefault();
+// 	var adminMore = $(".header-admin .nav-admin--more");
+// 	if (!(adminMore.hasClass("show-more"))) {
+// 		adminMore.addClass("show-more");
+// 	} else {
+// 		adminMore.removeClass("show-more");
+// 	}
 	
+// })
+
+$(".header-admin .nav-admin-more--go").hover(function(){
+	$(".header-admin .nav-admin--more").addClass("show-more");
 })
+
+$(".header-admin .nav-admin--more").hover(
+	function () {
+		$(this).addClass("show-more");
+	},
+	function () {
+		$(this).removeClass("show-more");
+	}
+)
 
 //setting push header
-$(".settings_push").click(function(e){
+$(".settings_push").hover(function(e){
 	e.preventDefault();
 
-	$(".pushes_block").toggleClass("active");
+	$(".pushes_block").addClass("active");
 })
+
+$(".pushes_block").hover(
+	function () {
+		$(this).addClass("active");
+	},
+	function () {
+		$(this).removeClass("active");
+	}
+)
 
 var btnChange = $(".container-admin .content_header-button-service");
 
@@ -206,6 +226,11 @@ clickPopup(closeEditShop, editShop);
 var openRemoveShopPopup = $(".edit-button-shop .icon-close");
 
 clickPopup(openRemoveShopPopup, removePopup);	
+
+//remove feedback
+var openRemoveFeedbackPopup = $(".feedback-button.delete");
+
+clickPopup(openRemoveFeedbackPopup, removePopup);	
 
 //add users
 var addUsers = $(".add-users");
@@ -467,3 +492,19 @@ itemListSetting.click(function(e){
 	textSelectSetting.text(text);
 	listSetting.removeClass("active--category");
 })
+
+//enroll delete podiemnik
+var deletePodiemnik = $(".enroll__table .lift-row .icon-close-pod");
+
+clickPopup(deletePodiemnik, removePopup);	
+
+//banner edit link
+var editLink = $(".load-link-button");
+	editLinkPopup = $(".link-edit-popup");
+	closeEditLink = $(".link-edit-popup-close");
+
+clickPopup(editLink, editLinkPopup);	
+clickPopup(closeEditLink, editLinkPopup);
+
+//plugin for scroll scroll-pane
+// $(".shop-add-category .choise-category--down").jScrollPane();

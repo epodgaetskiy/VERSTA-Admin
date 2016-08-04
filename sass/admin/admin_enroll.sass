@@ -11,7 +11,7 @@
 		vertical-align: middle
 		&:first-child 
 			margin-right: 20px
-		div
+		span
 			display: inline-block
 			vertical-align: top
 			padding-top: 8px
@@ -47,7 +47,7 @@
 			display: inline-block
 			padding-right: 10px
 			padding-top: 7px
-		div
+		span
 			display: inline-block
 			vertical-align: top
 			padding-top: 9px
@@ -118,22 +118,23 @@
 			width: 175px
 	.lift-row
 		p 
+			display: inline-block
+			vertical-align: top
 			color: grey
 			font-size: 14px
 			font-weight: 400
 			line-height: 1em
 			margin-bottom: 5px
 			position: relative
-			&:not(.not--icon):after
-				content: ''
-				position: absolute
-				top: 50%
-				transform: translateY(-50%)
-				right: 25px
-				display: block
-				width: 9px
-				height: 9px
-				background: url("../img/icon-cancel.png") no-repeat
+			margin-right: 10px
+		.icon-close-pod
+			display: inline-block
+			vertical-align: top
+			width: 9px
+			height: 9px
+			margin-top: 2px
+			background: url("../img/icon-cancel.png") no-repeat
+			cursor: pointer
 	.cell--write
 		th
 			background-color: white
@@ -248,7 +249,7 @@
 	display: none
 	width: 860px
 	background: #ffffff
-	position: fixed
+	position: absolute
 	top: 50%
 	left: 50%
 	transform: translate(-50%, -50%)
@@ -256,12 +257,12 @@
 	z-index: 2
 	.record-popup-close
 		position: absolute
-		top: 15px
+		top: 14px
 		right: 15px
-		width: 10px
-		height: 9px
+		width: 16px
+		height: 16px
 		cursor: pointer
-		background: url('../img/icon-close.svg') no-repeat
+		background: url('../img/icon-close.png') no-repeat
 	.record-popup-main
 		label
 			font-size: 12px
@@ -270,8 +271,8 @@
 		.record-popup-head
 			background: #f7f9fc
 			p
-				font-size: 12px
-				line-height: 12px
+				font-size: 14px
+				line-height: 14px
 				color: #4c4c4c
 				padding: 15px 0
 				text-align: center

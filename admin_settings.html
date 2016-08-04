@@ -41,6 +41,7 @@
 				<li><a href="admin_price.html">Цены на услуги</a></li>
 				<li><a href="admin_banner.html">Баннер</a></li>
 				<li><a href="admin_users.html">Пользователи</a></li>
+				<li><a href="admin_feedback.html">Отзывы</a></li>
 			</ul>
 			<div class="settings-block">
 				<div class="settings-block_img">
@@ -90,15 +91,15 @@
 				<form method="POST">
 					<div class="settings-column clearfix">
 						<div class="settings-column-1">
-							<label for="work-hours">Время работы c</label><br>
+							<label>Время работы c</label><br>
 							<label for="car-wash">Автосервис</label><br>
 							<label for="tire">Шиномонтаж</label><br>
-							<label for="lift">Подъемник</label><br>
+							<label>Подъемник</label><br>
 						</div>
 						<div class="settings-column-2">	
-							<input type="text" id="work-hours" name="with-hour-work" placeholder="00">
+							<input class="work-hours" type="text" name="with-hour-work" placeholder="00">
 							<span>ч.</span>
-							<input type="text" id="work-hours" name="with-minutes-work" placeholder="00">
+							<input class="work-hours" type="text" name="with-minutes-work" placeholder="00">
 							<span>мин.</span><br>
 							<input type="text" id="car-wash" name="minutes-service">
 							<span>мин.</span><br>
@@ -118,9 +119,9 @@
 						</div>
 						<div class="settings-column-3">
 							<span>До</span>
-							<input type="text" id="work-hours" name="to-hour-work" placeholder="00">
+							<input class="work-hours-2" type="text" name="to-hour-work" placeholder="00">
 							<span>ч.</span>
-							<input type="text" id="work-hours" name="to-minutes-work" placeholder="00">
+							<input class="work-hours-2" type="text" name="to-minutes-work" placeholder="00">
 							<span>мин.</span><br>
 							<button class="added-button">Добавить</button>
 						</div>

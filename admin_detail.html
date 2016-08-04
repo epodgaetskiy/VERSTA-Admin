@@ -42,6 +42,7 @@
 				<li><a href="admin_price.html">Цены на услуги</a></li>
 				<li><a href="admin_banner.html">Баннер</a></li>
 				<li><a href="admin_users.html">Пользователи</a></li>
+				<li><a href="admin_feedback.html">Отзывы</a></li>
 			</ul>
 			<div class="settings-block">
 				<div class="settings-block_img">
@@ -83,7 +84,7 @@
 	<div class="container-admin">
 		<div class="content_header">
 			<h1 class="content_header-title">Запчасти</h1>
-			<button class="content_header-add add-detail"><img src="img/icon_add-new.png"><div>Добавить заказ</div></button>
+			<button class="content_header-add add-detail"><img src="img/icon_add-new.png" alt=""><span>Добавить заказ</span></button>
 		</div>
 		<div class="content-admin-wrapper">
 			<div class="detail_wrapper">
@@ -112,7 +113,7 @@
 						</div>
 						<div class="detail edit">
 							<div class="edit-button">
-								<img class="edit-detail" src="img/icon-pencil.png">
+								<img class="edit-detail" src="img/icon-pencil.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -130,7 +131,7 @@
 						</div>
 						<div class="detail edit">
 							<div class="edit-button">
-								<img class="edit-detail" src="img/icon-pencil.png">
+								<img class="edit-detail" src="img/icon-pencil.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -149,7 +150,7 @@
 						</div>
 						<div class="detail edit">
 							<div class="edit-button">
-								<img class="edit-detail" src="img/icon-pencil.png">
+								<img class="edit-detail" src="img/icon-pencil.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -195,7 +196,6 @@
 		</div>
 	</div>
 	<!-- Edit detail -->
-	<div class="shadow"></div>
 	<div class="detail-edit-popup">
 		<div class="detail-edit-popup-close"></div>
 		<div class="record-popup-main">
@@ -231,7 +231,21 @@
 			</form>
 		</div>
 	</div>
-
+	<!-- Remove element -->
+	<div class="sure-remove">
+		<div class="sure-slider-close"></div>
+		<div class="sure-slider-main">
+			<div class="sure-slider-head">
+				<p>Подтверждение удаления</p>
+			</div>
+			<p class="sure-slider-text">Вы уверены, что хотите удалить?</p>
+			<div class="sure-slider-buttons">
+				<button class="sure-slider-button accept">Подтвердить</button>
+				<button class="sure-slider-button delete">Отмена</button>
+			</div>
+		</div>
+	</div>
+	
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>

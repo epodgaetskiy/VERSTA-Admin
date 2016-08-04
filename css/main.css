@@ -107,10 +107,16 @@ ul {
     border-top: none;
     background-color: white; }
     /* line 58, ../sass/admin/_a_header.sass */
+    .header-admin .nav-admin--more.show-more {
+      display: block; }
+    /* line 60, ../sass/admin/_a_header.sass */
     .header-admin .nav-admin--more li {
       background-color: white;
       border-bottom: 1px solid #edeff2; }
-      /* line 61, ../sass/admin/_a_header.sass */
+      /* line 63, ../sass/admin/_a_header.sass */
+      .header-admin .nav-admin--more li:hover {
+        background-color: #f7f9fc; }
+      /* line 65, ../sass/admin/_a_header.sass */
       .header-admin .nav-admin--more li a {
         padding: 0 50px 0 20px;
         color: #999;
@@ -118,19 +124,19 @@ ul {
         font-weight: 400;
         line-height: 28px;
         text-decoration: none; }
-  /* line 69, ../sass/admin/_a_header.sass */
+  /* line 73, ../sass/admin/_a_header.sass */
   .header-admin .login-admin {
     float: right;
     display: inline-block;
     font-size: 0;
     margin-top: -5px; }
-    /* line 74, ../sass/admin/_a_header.sass */
+    /* line 78, ../sass/admin/_a_header.sass */
     .header-admin .login-admin .login_img {
       display: inline-block;
       vertical-align: top;
       margin-right: 15px;
       border-radius: 50%; }
-    /* line 79, ../sass/admin/_a_header.sass */
+    /* line 83, ../sass/admin/_a_header.sass */
     .header-admin .login-admin .login_name {
       display: inline-block;
       vertical-align: top;
@@ -140,27 +146,27 @@ ul {
       font-size: 12px;
       font-weight: 400;
       line-height: 36px; }
-  /* line 89, ../sass/admin/_a_header.sass */
+  /* line 93, ../sass/admin/_a_header.sass */
   .header-admin .settings-block {
     float: right;
     display: inline-block;
     font-size: 0;
     line-height: 25px;
     margin-left: 70px; }
-    /* line 95, ../sass/admin/_a_header.sass */
+    /* line 99, ../sass/admin/_a_header.sass */
     .header-admin .settings-block .settings-block_img {
       display: inline-block;
       vertical-align: middle;
       height: 16px;
       margin-right: 35px;
       cursor: pointer; }
-      /* line 101, ../sass/admin/_a_header.sass */
+      /* line 105, ../sass/admin/_a_header.sass */
       .header-admin .settings-block .settings-block_img:last-child {
         margin-right: 0; }
-      /* line 103, ../sass/admin/_a_header.sass */
+      /* line 107, ../sass/admin/_a_header.sass */
       .header-admin .settings-block .settings-block_img:first-child {
         position: relative; }
-        /* line 105, ../sass/admin/_a_header.sass */
+        /* line 109, ../sass/admin/_a_header.sass */
         .header-admin .settings-block .settings-block_img:first-child .push-count {
           position: absolute;
           top: -6px;
@@ -170,13 +176,13 @@ ul {
           height: 14px;
           border-radius: 50%;
           color: white;
-          font-size: 10px;
+          font-size: 8px;
           font-weight: 600;
           line-height: 14px;
           text-transform: uppercase;
           text-align: center;
           background-color: #f60; }
-  /* line 120, ../sass/admin/_a_header.sass */
+  /* line 124, ../sass/admin/_a_header.sass */
   .header-admin .pushes_block {
     display: none;
     position: absolute;
@@ -185,10 +191,10 @@ ul {
     width: 320px;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
     border-top: 1px solid #f60; }
-    /* line 128, ../sass/admin/_a_header.sass */
+    /* line 132, ../sass/admin/_a_header.sass */
     .header-admin .pushes_block .pushes__container {
       position: relative; }
-      /* line 130, ../sass/admin/_a_header.sass */
+      /* line 134, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .pushes__container:before {
         content: "";
         position: absolute;
@@ -200,20 +206,18 @@ ul {
         height: 13px;
         background-color: #f60;
         transform: rotate(45deg); }
-    /* line 141, ../sass/admin/_a_header.sass */
+    /* line 145, ../sass/admin/_a_header.sass */
     .header-admin .pushes_block .push-item {
       padding: 15px 20px 15px 50px;
       border: 1px solid #edeff2;
       border-top: none;
       position: relative;
-      z-index: 5; }
-      /* line 147, ../sass/admin/_a_header.sass */
-      .header-admin .pushes_block .push-item:nth-child(2n+1) {
+      z-index: 5;
+      background-color: white; }
+      /* line 152, ../sass/admin/_a_header.sass */
+      .header-admin .pushes_block .push-item:hover {
         background-color: #f7f9fc; }
-      /* line 149, ../sass/admin/_a_header.sass */
-      .header-admin .pushes_block .push-item:nth-child(2n) {
-        background-color: white; }
-      /* line 151, ../sass/admin/_a_header.sass */
+      /* line 154, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item .push--text {
         display: inline-block;
         vertical-align: middle;
@@ -222,15 +226,15 @@ ul {
         line-height: 20px;
         font-weight: 400;
         margin-bottom: 4px; }
-      /* line 159, ../sass/admin/_a_header.sass */
+      /* line 162, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item .push-free-info {
         display: none;
         vertical-align: top;
         margin-right: 10px; }
-      /* line 164, ../sass/admin/_a_header.sass */
+      /* line 167, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item.push-free .push-free-info {
         display: inline-block; }
-      /* line 166, ../sass/admin/_a_header.sass */
+      /* line 169, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item .push--date {
         display: inline-block;
         vertical-align: middle;
@@ -238,13 +242,13 @@ ul {
         font-size: 12px;
         font-weight: 400;
         line-height: 1em; }
-      /* line 173, ../sass/admin/_a_header.sass */
+      /* line 176, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item .push-edit {
         position: absolute;
         top: 15px;
         right: 20px;
         cursor: pointer; }
-      /* line 178, ../sass/admin/_a_header.sass */
+      /* line 181, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item .icon-type-push {
         position: absolute;
         top: 15px;
@@ -252,10 +256,10 @@ ul {
         display: block;
         width: 16px;
         height: 16px; }
-      /* line 185, ../sass/admin/_a_header.sass */
+      /* line 188, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item .icon-push-service {
         background: url("../img/icon-record-service.png") no-repeat; }
-      /* line 187, ../sass/admin/_a_header.sass */
+      /* line 190, ../sass/admin/_a_header.sass */
       .header-admin .pushes_block .push-item .icon-push-tire {
         width: 20px;
         height: 20px;
@@ -295,19 +299,19 @@ ul {
   /* line 29, ../sass/admin/_a_components.sass */
   .sure-remove .sure-slider-close {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 15px;
-    width: 10px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    background: url("../img/icon-close.svg") no-repeat; }
+    background: url("../img/icon-close.png") no-repeat; }
   /* line 38, ../sass/admin/_a_components.sass */
   .sure-remove .sure-slider-main .sure-slider-head {
     background: #f7f9fc; }
     /* line 40, ../sass/admin/_a_components.sass */
     .sure-remove .sure-slider-main .sure-slider-head p {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: #4c4c4c;
       padding: 15px 0; }
   /* line 45, ../sass/admin/_a_components.sass */
@@ -387,19 +391,21 @@ ul {
       font-size: 0.8em;
       width: 200px;
       background: #fff;
+      border: none;
+      outline: none;
       border: 1px solid #edeff2;
       border-radius: 5px; }
-      /* line 45, ../sass/admin/admin_banner.sass */
-      .banner_wrapper .load-banner .load-img-button div img,
-      .banner_wrapper .load-banner .load-link-button div img {
+      /* line 46, ../sass/admin/admin_banner.sass */
+      .banner_wrapper .load-banner .load-img-button img,
+      .banner_wrapper .load-banner .load-link-button img {
         display: inline-block;
         vertical-align: middle;
         margin-right: 10px; }
-      /* line 49, ../sass/admin/admin_banner.sass */
-      .banner_wrapper .load-banner .load-img-button div div,
-      .banner_wrapper .load-banner .load-link-button div div {
+      /* line 50, ../sass/admin/admin_banner.sass */
+      .banner_wrapper .load-banner .load-img-button span,
+      .banner_wrapper .load-banner .load-link-button span {
         display: inline-block; }
-    /* line 51, ../sass/admin/admin_banner.sass */
+    /* line 52, ../sass/admin/admin_banner.sass */
     .banner_wrapper .load-banner .load-save-button {
       margin-top: 25px;
       background: #65b545;
@@ -408,6 +414,89 @@ ul {
       border-radius: 5px;
       border: 0;
       padding: 10px 40px; }
+
+/* line 61, ../sass/admin/admin_banner.sass */
+.link-edit-popup {
+  display: none;
+  width: 340px;
+  background: #ffffff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 2; }
+  /* line 71, ../sass/admin/admin_banner.sass */
+  .link-edit-popup .link-edit-popup-close {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background: url("../img/icon-close.png") no-repeat; }
+  /* line 80, ../sass/admin/admin_banner.sass */
+  .link-edit-popup .record-popup-main label {
+    font-size: 12px;
+    line-height: 12px;
+    color: #999999; }
+  /* line 84, ../sass/admin/admin_banner.sass */
+  .link-edit-popup .record-popup-main .record-popup-head {
+    background: #f7f9fc; }
+    /* line 86, ../sass/admin/admin_banner.sass */
+    .link-edit-popup .record-popup-main .record-popup-head p {
+      font-size: 14px;
+      line-height: 14px;
+      color: #4c4c4c;
+      padding: 15px 0;
+      text-align: center; }
+  /* line 92, ../sass/admin/admin_banner.sass */
+  .link-edit-popup .record-popup-main form {
+    padding: 30px 40px 35px 40px;
+    text-align: center; }
+    /* line 95, ../sass/admin/admin_banner.sass */
+    .link-edit-popup .record-popup-main form input {
+      width: calc( 100% - 30px );
+      height: 34px;
+      outline: none;
+      background-color: white;
+      border: 1px solid #edeff2;
+      border-radius: 4px;
+      color: #474747;
+      font-size: 12px;
+      font-weight: 500;
+      padding: 0 15px;
+      margin-bottom: 30px; }
+      /* line 107, ../sass/admin/admin_banner.sass */
+      .link-edit-popup .record-popup-main form input:focus {
+        outline: none; }
+      /* line 109, ../sass/admin/admin_banner.sass */
+      .link-edit-popup .record-popup-main form input::-webkit-input-placeholder {
+        color: #474747; }
+      /* line 111, ../sass/admin/admin_banner.sass */
+      .link-edit-popup .record-popup-main form input::-moz-placeholder {
+        color: #474747; }
+      /* line 113, ../sass/admin/admin_banner.sass */
+      .link-edit-popup .record-popup-main form input:-moz-placeholder {
+        color: #474747; }
+      /* line 115, ../sass/admin/admin_banner.sass */
+      .link-edit-popup .record-popup-main form input:-ms-input-placeholder {
+        color: #474747; }
+    /* line 117, ../sass/admin/admin_banner.sass */
+    .link-edit-popup .record-popup-main form .record-btn--save {
+      margin: 0 auto;
+      padding: 0;
+      border: none;
+      outline: none;
+      width: 170px;
+      height: 34px;
+      line-height: 34px;
+      background-color: #65b545;
+      border-radius: 4px;
+      color: white;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase; }
 
 /* line 2, ../sass/admin/admin_enroll.sass */
 .content_header--enroll .content_header-button-service {
@@ -424,7 +513,7 @@ ul {
   .content_header--enroll .content_header-button-service:first-child {
     margin-right: 20px; }
   /* line 14, ../sass/admin/admin_enroll.sass */
-  .content_header--enroll .content_header-button-service div {
+  .content_header--enroll .content_header-button-service span {
     display: inline-block;
     vertical-align: top;
     padding-top: 8px;
@@ -469,7 +558,7 @@ ul {
     padding-right: 10px;
     padding-top: 7px; }
   /* line 50, ../sass/admin/admin_enroll.sass */
-  .content_header--enroll .content_header-add div {
+  .content_header--enroll .content_header-add span {
     display: inline-block;
     vertical-align: top;
     padding-top: 9px; }
@@ -554,24 +643,25 @@ ul {
     width: 175px; }
   /* line 120, ../sass/admin/admin_enroll.sass */
   .enroll__table .lift-row p {
+    display: inline-block;
+    vertical-align: top;
     color: grey;
     font-size: 14px;
     font-weight: 400;
     line-height: 1em;
     margin-bottom: 5px;
-    position: relative; }
-    /* line 127, ../sass/admin/admin_enroll.sass */
-    .enroll__table .lift-row p:not(.not--icon):after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 25px;
-      display: block;
-      width: 9px;
-      height: 9px;
-      background: url("../img/icon-cancel.png") no-repeat; }
-  /* line 138, ../sass/admin/admin_enroll.sass */
+    position: relative;
+    margin-right: 10px; }
+  /* line 130, ../sass/admin/admin_enroll.sass */
+  .enroll__table .lift-row .icon-close-pod {
+    display: inline-block;
+    vertical-align: top;
+    width: 9px;
+    height: 9px;
+    margin-top: 2px;
+    background: url("../img/icon-cancel.png") no-repeat;
+    cursor: pointer; }
+  /* line 139, ../sass/admin/admin_enroll.sass */
   .enroll__table .cell--write th {
     background-color: white;
     border: 1px solid #edeff2;
@@ -580,22 +670,22 @@ ul {
     line-height: 1em;
     font-weight: 400;
     height: 58px; }
-    /* line 146, ../sass/admin/admin_enroll.sass */
+    /* line 147, ../sass/admin/admin_enroll.sass */
     .enroll__table .cell--write th:first-child {
       width: 58px; }
-  /* line 148, ../sass/admin/admin_enroll.sass */
+  /* line 149, ../sass/admin/admin_enroll.sass */
   .enroll__table .cell--write .record--show {
     position: relative; }
-  /* line 150, ../sass/admin/admin_enroll.sass */
+  /* line 151, ../sass/admin/admin_enroll.sass */
   .enroll__table .cell--write .record-h-2 {
     height: 117px; }
-  /* line 152, ../sass/admin/admin_enroll.sass */
+  /* line 153, ../sass/admin/admin_enroll.sass */
   .enroll__table .cell--write .record-h-3 {
     height: 176px; }
-  /* line 154, ../sass/admin/admin_enroll.sass */
+  /* line 155, ../sass/admin/admin_enroll.sass */
   .enroll__table .cell--write .record-h-4 {
     height: 235px; }
-  /* line 156, ../sass/admin/admin_enroll.sass */
+  /* line 157, ../sass/admin/admin_enroll.sass */
   .enroll__table .cell--write .record_block {
     position: absolute;
     top: 0;
@@ -604,19 +694,19 @@ ul {
     width: 175px;
     background-color: #f7f9fc;
     border-bottom: 1px solid #edeff2; }
-    /* line 164, ../sass/admin/admin_enroll.sass */
+    /* line 165, ../sass/admin/admin_enroll.sass */
     .enroll__table .cell--write .record_block .record_block--container {
       position: relative;
       width: 100%;
       height: 100%; }
-      /* line 168, ../sass/admin/admin_enroll.sass */
+      /* line 169, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .record--text {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100%; }
-        /* line 174, ../sass/admin/admin_enroll.sass */
+        /* line 175, ../sass/admin/admin_enroll.sass */
         .enroll__table .cell--write .record_block .record_block--container .record--text p {
           text-align: left;
           padding: 0 10px;
@@ -625,23 +715,23 @@ ul {
           line-height: 15px;
           font-weight: 500;
           word-wrap: break-word; }
-      /* line 182, ../sass/admin/admin_enroll.sass */
+      /* line 183, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .icon-record--for {
         position: absolute;
         top: 8px;
         left: 10px;
         display: block; }
-      /* line 187, ../sass/admin/admin_enroll.sass */
+      /* line 188, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .record--service {
         width: 17px;
         height: 17px;
         background: url("../img/icon-record-service.png") no-repeat; }
-      /* line 191, ../sass/admin/admin_enroll.sass */
+      /* line 192, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .record--tire {
         width: 16px;
         height: 16px;
         background: url("../img/icon-record-tire.png") no-repeat; }
-      /* line 195, ../sass/admin/admin_enroll.sass */
+      /* line 196, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .icon-record--free {
         position: absolute;
         top: 8px;
@@ -650,7 +740,7 @@ ul {
         width: 9px;
         height: 16px;
         background: url("../img/icon-record-free.png") no-repeat; }
-      /* line 203, ../sass/admin/admin_enroll.sass */
+      /* line 204, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .icon-record--edit {
         position: absolute;
         top: 8px;
@@ -660,7 +750,7 @@ ul {
         height: 16px;
         background: url("../img/icon-pencil.png") no-repeat;
         cursor: pointer; }
-      /* line 212, ../sass/admin/admin_enroll.sass */
+      /* line 213, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .record__status {
         position: absolute;
         bottom: 0;
@@ -669,7 +759,7 @@ ul {
         width: 100%;
         height: 34px;
         text-align: left; }
-        /* line 220, ../sass/admin/admin_enroll.sass */
+        /* line 221, ../sass/admin/admin_enroll.sass */
         .enroll__table .cell--write .record_block .record_block--container .record__status .icon-status {
           display: inline-block;
           vertical-align: middle;
@@ -677,14 +767,14 @@ ul {
           height: 16px;
           margin: 0 10px;
           padding-top: 3px; }
-        /* line 227, ../sass/admin/admin_enroll.sass */
+        /* line 228, ../sass/admin/admin_enroll.sass */
         .enroll__table .cell--write .record_block .record_block--container .record__status .icon__status-wait {
           background: url("../img/icon-wait.png") no-repeat; }
-        /* line 229, ../sass/admin/admin_enroll.sass */
+        /* line 230, ../sass/admin/admin_enroll.sass */
         .enroll__table .cell--write .record_block .record_block--container .record__status .icon__status-confirmed {
           height: 13px;
           background: url("../img/icon-confirmed.png") no-repeat; }
-        /* line 232, ../sass/admin/admin_enroll.sass */
+        /* line 233, ../sass/admin/admin_enroll.sass */
         .enroll__table .cell--write .record_block .record_block--container .record__status p {
           display: inline-block;
           color: white;
@@ -694,52 +784,52 @@ ul {
           text-transform: uppercase;
           text-align: left;
           letter-spacing: 1px; }
-      /* line 241, ../sass/admin/admin_enroll.sass */
+      /* line 242, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .status-wait {
         background-color: #ffbb50; }
-      /* line 243, ../sass/admin/admin_enroll.sass */
+      /* line 244, ../sass/admin/admin_enroll.sass */
       .enroll__table .cell--write .record_block .record_block--container .status-confirmed {
         background-color: #65b545; }
 
-/* line 247, ../sass/admin/admin_enroll.sass */
+/* line 248, ../sass/admin/admin_enroll.sass */
 .record-popup {
   display: none;
   width: 860px;
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   z-index: 2; }
-  /* line 257, ../sass/admin/admin_enroll.sass */
+  /* line 258, ../sass/admin/admin_enroll.sass */
   .record-popup .record-popup-close {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 15px;
-    width: 10px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    background: url("../img/icon-close.svg") no-repeat; }
-  /* line 266, ../sass/admin/admin_enroll.sass */
+    background: url("../img/icon-close.png") no-repeat; }
+  /* line 267, ../sass/admin/admin_enroll.sass */
   .record-popup .record-popup-main label {
     font-size: 12px;
     line-height: 12px;
     color: #999999; }
-  /* line 270, ../sass/admin/admin_enroll.sass */
+  /* line 271, ../sass/admin/admin_enroll.sass */
   .record-popup .record-popup-main .record-popup-head {
     background: #f7f9fc; }
-    /* line 272, ../sass/admin/admin_enroll.sass */
+    /* line 273, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main .record-popup-head p {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: #4c4c4c;
       padding: 15px 0;
       text-align: center; }
-  /* line 278, ../sass/admin/admin_enroll.sass */
+  /* line 279, ../sass/admin/admin_enroll.sass */
   .record-popup .record-popup-main form {
     padding: 10px 40px 35px 40px; }
-    /* line 280, ../sass/admin/admin_enroll.sass */
+    /* line 281, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form input {
       width: 108px;
       height: 34px;
@@ -753,108 +843,108 @@ ul {
       padding: 0 15px;
       margin-right: 17px;
       margin-bottom: 30px; }
-      /* line 293, ../sass/admin/admin_enroll.sass */
+      /* line 294, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form input:focus {
         outline: none; }
-      /* line 295, ../sass/admin/admin_enroll.sass */
+      /* line 296, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form input::-webkit-input-placeholder {
         color: #474747; }
-      /* line 297, ../sass/admin/admin_enroll.sass */
+      /* line 298, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form input::-moz-placeholder {
         color: #474747; }
-      /* line 299, ../sass/admin/admin_enroll.sass */
+      /* line 300, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form input:-moz-placeholder {
         color: #474747; }
-      /* line 301, ../sass/admin/admin_enroll.sass */
+      /* line 302, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form input:-ms-input-placeholder {
         color: #474747; }
-    /* line 303, ../sass/admin/admin_enroll.sass */
+    /* line 304, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .mobile {
       margin-right: 22px; }
-    /* line 305, ../sass/admin/admin_enroll.sass */
+    /* line 306, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .number-car-1,
     .record-popup .record-popup-main form .number-car-2 {
       margin-right: 0;
       color: #4d4d4d; }
-      /* line 309, ../sass/admin/admin_enroll.sass */
+      /* line 310, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .number-car-1::-webkit-input-placeholder,
       .record-popup .record-popup-main form .number-car-2::-webkit-input-placeholder {
         color: #c7cacf; }
-      /* line 311, ../sass/admin/admin_enroll.sass */
+      /* line 312, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .number-car-1::-moz-placeholder,
       .record-popup .record-popup-main form .number-car-2::-moz-placeholder {
         color: #c7cacf; }
-      /* line 313, ../sass/admin/admin_enroll.sass */
+      /* line 314, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .number-car-1:-moz-placeholder,
       .record-popup .record-popup-main form .number-car-2:-moz-placeholder {
         color: #c7cacf; }
-      /* line 315, ../sass/admin/admin_enroll.sass */
+      /* line 316, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .number-car-1:-ms-input-placeholder,
       .record-popup .record-popup-main form .number-car-2:-ms-input-placeholder {
         color: #c7cacf; }
-    /* line 317, ../sass/admin/admin_enroll.sass */
+    /* line 318, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .number-car-1 {
       width: 60px; }
-    /* line 319, ../sass/admin/admin_enroll.sass */
+    /* line 320, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .number-car-2 {
       width: 25px;
       padding: 0 5px;
       margin-right: 0;
       background: url("../img/number-rus.png") no-repeat 100% 50%; }
-      /* line 324, ../sass/admin/admin_enroll.sass */
+      /* line 325, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .number-car-2:focus {
         background: none; }
-    /* line 326, ../sass/admin/admin_enroll.sass */
+    /* line 327, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .choice-row-2 {
       margin-bottom: 30px; }
-    /* line 328, ../sass/admin/admin_enroll.sass */
+    /* line 329, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .choise-range-time {
       text-align: center;
       margin-bottom: 30px; }
-      /* line 331, ../sass/admin/admin_enroll.sass */
+      /* line 332, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-range-time p {
         display: inline-block;
         color: #474747;
         font-size: 12px;
         font-weight: 400;
         line-height: 28px; }
-      /* line 337, ../sass/admin/admin_enroll.sass */
+      /* line 338, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-range-time input {
         width: 18px;
         padding: 0 10px;
         margin: 0; }
-        /* line 341, ../sass/admin/admin_enroll.sass */
+        /* line 342, ../sass/admin/admin_enroll.sass */
         .record-popup .record-popup-main form .choise-range-time input::-webkit-input-placeholder {
           color: #c7cacf; }
-        /* line 343, ../sass/admin/admin_enroll.sass */
+        /* line 344, ../sass/admin/admin_enroll.sass */
         .record-popup .record-popup-main form .choise-range-time input::-moz-placeholder {
           color: #c7cacf; }
-        /* line 345, ../sass/admin/admin_enroll.sass */
+        /* line 346, ../sass/admin/admin_enroll.sass */
         .record-popup .record-popup-main form .choise-range-time input:-moz-placeholder {
           color: #c7cacf; }
-        /* line 347, ../sass/admin/admin_enroll.sass */
+        /* line 348, ../sass/admin/admin_enroll.sass */
         .record-popup .record-popup-main form .choise-range-time input:-ms-input-placeholder {
           color: #c7cacf; }
-      /* line 349, ../sass/admin/admin_enroll.sass */
+      /* line 350, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-range-time .first-choise {
         margin-right: 10px; }
-      /* line 351, ../sass/admin/admin_enroll.sass */
+      /* line 352, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-range-time .second-choise {
         margin-left: 45px;
         margin-right: 10px; }
-    /* line 354, ../sass/admin/admin_enroll.sass */
+    /* line 355, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .year {
       width: 38px; }
-    /* line 356, ../sass/admin/admin_enroll.sass */
+    /* line 357, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .vin {
       width: 193px;
       margin-right: 0; }
-    /* line 359, ../sass/admin/admin_enroll.sass */
+    /* line 360, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .choise-select--container {
       display: inline-block;
       vertical-align: top;
       position: relative; }
-    /* line 363, ../sass/admin/admin_enroll.sass */
+    /* line 364, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .choise-side {
       position: relative;
       list-style-type: none;
@@ -869,7 +959,7 @@ ul {
       border-radius: 4px;
       cursor: pointer;
       margin-right: 17px; }
-      /* line 377, ../sass/admin/admin_enroll.sass */
+      /* line 378, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-side:after {
         content: "";
         position: absolute;
@@ -880,12 +970,12 @@ ul {
         width: 10px;
         height: 5px;
         background: url("../img/icon-select-arrow.png") no-repeat; }
-      /* line 387, ../sass/admin/admin_enroll.sass */
+      /* line 388, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-side li {
         color: #474747;
         font-size: 12px;
         font-weight: 400; }
-    /* line 391, ../sass/admin/admin_enroll.sass */
+    /* line 392, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .choise-side--down {
       display: none;
       position: absolute;
@@ -899,47 +989,47 @@ ul {
       border-top: none;
       border-radius: 4px;
       cursor: pointer; }
-      /* line 404, ../sass/admin/admin_enroll.sass */
+      /* line 405, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-side--down.active--side {
         display: inline-block; }
-      /* line 406, ../sass/admin/admin_enroll.sass */
+      /* line 407, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .choise-side--down li {
         padding-left: 15px;
         color: #474747;
         font-size: 12px;
         font-weight: 400; }
-        /* line 411, ../sass/admin/admin_enroll.sass */
+        /* line 412, ../sass/admin/admin_enroll.sass */
         .record-popup .record-popup-main form .choise-side--down li:hover {
           background-color: #a4afc0; }
-    /* line 414, ../sass/admin/admin_enroll.sass */
+    /* line 415, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .record__work--container .record__work {
       width: calc( 100% - 32px );
       color: #4d4d4d;
       margin-bottom: 15px; }
-      /* line 418, ../sass/admin/admin_enroll.sass */
+      /* line 419, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record__work--container .record__work::-webkit-input-placeholder {
         color: #c7cacf; }
-      /* line 420, ../sass/admin/admin_enroll.sass */
+      /* line 421, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record__work--container .record__work::-moz-placeholder {
         color: #c7cacf; }
-      /* line 422, ../sass/admin/admin_enroll.sass */
+      /* line 423, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record__work--container .record__work:-moz-placeholder {
         color: #c7cacf; }
-      /* line 424, ../sass/admin/admin_enroll.sass */
+      /* line 425, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record__work--container .record__work:-ms-input-placeholder {
         color: #c7cacf; }
-    /* line 427, ../sass/admin/admin_enroll.sass */
+    /* line 428, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .record-functional_container .record-add--work {
       float: left;
       cursor: pointer; }
-      /* line 430, ../sass/admin/admin_enroll.sass */
+      /* line 431, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record-functional_container .record-add--work img {
         display: inline-block;
         vertical-align: top;
         width: 32px;
         height: 32px;
         margin-right: 15px; }
-      /* line 436, ../sass/admin/admin_enroll.sass */
+      /* line 437, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record-functional_container .record-add--work p {
         display: inline-block;
         vertical-align: top;
@@ -949,20 +1039,20 @@ ul {
         font-weight: 300;
         line-height: 16px;
         border-bottom: 1px dashed #f60; }
-    /* line 445, ../sass/admin/admin_enroll.sass */
+    /* line 446, ../sass/admin/admin_enroll.sass */
     .record-popup .record-popup-main form .record-functional_container .record_save {
       float: right;
       width: 175px; }
-      /* line 448, ../sass/admin/admin_enroll.sass */
+      /* line 449, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record-functional_container .record_save label {
         color: #65b545;
         font-size: 12px;
         font-weight: 400;
         margin-bottom: 40px; }
-      /* line 453, ../sass/admin/admin_enroll.sass */
+      /* line 454, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record-functional_container .record_save input[type="checkbox"] {
         display: none; }
-      /* line 455, ../sass/admin/admin_enroll.sass */
+      /* line 456, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record-functional_container .record_save input[type="checkbox"] + label {
         position: relative;
         padding-left: 25px;
@@ -970,7 +1060,7 @@ ul {
         vertical-align: middle;
         cursor: pointer;
         line-height: 28px; }
-        /* line 462, ../sass/admin/admin_enroll.sass */
+        /* line 463, ../sass/admin/admin_enroll.sass */
         .record-popup .record-popup-main form .record-functional_container .record_save input[type="checkbox"] + label:before {
           content: "";
           display: block;
@@ -980,10 +1070,10 @@ ul {
           width: 16px;
           height: 16px;
           background: url("../img/icon-free-radio-box.png") no-repeat; }
-      /* line 472, ../sass/admin/admin_enroll.sass */
+      /* line 473, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record-functional_container .record_save input[type="checkbox"]:checked + label:before {
         background: url("../img/icon-free-radio-checked-box.png") no-repeat; }
-      /* line 474, ../sass/admin/admin_enroll.sass */
+      /* line 475, ../sass/admin/admin_enroll.sass */
       .record-popup .record-popup-main form .record-functional_container .record_save .record-btn--save {
         margin: 0;
         padding: 0;
@@ -1023,7 +1113,7 @@ ul {
     padding-right: 10px;
     padding-top: 7px; }
   /* line 23, ../sass/admin/admin_detail.sass */
-  .container-admin .content_header .content_header-add div {
+  .container-admin .content_header .content_header-add span {
     display: inline-block;
     vertical-align: top;
     padding-top: 9px; }
@@ -1146,7 +1236,7 @@ ul {
   display: none;
   width: 860px;
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1155,12 +1245,12 @@ ul {
   /* line 128, ../sass/admin/admin_detail.sass */
   .detail-add-popup .detail-add-popup-close {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 15px;
-    width: 10px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    background: url("../img/icon-close.svg") no-repeat; }
+    background: url("../img/icon-close.png") no-repeat; }
   /* line 137, ../sass/admin/admin_detail.sass */
   .detail-add-popup .record-popup-main label {
     font-size: 12px;
@@ -1171,8 +1261,8 @@ ul {
     background: #f7f9fc; }
     /* line 143, ../sass/admin/admin_detail.sass */
     .detail-add-popup .record-popup-main .record-popup-head p {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: #4c4c4c;
       padding: 15px 0;
       text-align: center; }
@@ -1210,7 +1300,7 @@ ul {
         color: #474747; }
     /* line 174, ../sass/admin/admin_detail.sass */
     .detail-add-popup .record-popup-main form .mobile {
-      margin-right: 22px; }
+      margin-right: 20px; }
     /* line 176, ../sass/admin/admin_detail.sass */
     .detail-add-popup .record-popup-main form .number-car-1,
     .detail-add-popup .record-popup-main form .number-car-2 {
@@ -1443,7 +1533,7 @@ ul {
   display: none;
   width: 860px;
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1452,12 +1542,12 @@ ul {
   /* line 369, ../sass/admin/admin_detail.sass */
   .detail-edit-popup .detail-edit-popup-close {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 15px;
-    width: 10px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    background: url("../img/icon-close.svg") no-repeat; }
+    background: url("../img/icon-close.png") no-repeat; }
   /* line 378, ../sass/admin/admin_detail.sass */
   .detail-edit-popup .record-popup-main label {
     font-size: 12px;
@@ -1468,8 +1558,8 @@ ul {
     background: #f7f9fc; }
     /* line 384, ../sass/admin/admin_detail.sass */
     .detail-edit-popup .record-popup-main .record-popup-head p {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: #4c4c4c;
       padding: 15px 0;
       text-align: center; }
@@ -1507,7 +1597,7 @@ ul {
         color: #474747; }
     /* line 415, ../sass/admin/admin_detail.sass */
     .detail-edit-popup .record-popup-main form .mobile {
-      margin-right: 22px; }
+      margin-right: 20px; }
     /* line 417, ../sass/admin/admin_detail.sass */
     .detail-edit-popup .record-popup-main form .number-car-1,
     .detail-edit-popup .record-popup-main form .number-car-2 {
@@ -1936,19 +2026,20 @@ ul {
       font-weight: normal; }
     /* line 49, ../sass/admin/admin_feedback.sass */
     .feedback .feedback-main-text .feedback-text {
+      width: 100%;
+      height: 110px;
       border: 1px solid #edeff2;
       border-radius: 5px;
       margin: 0;
-      padding: 13px 45px 25px 13px; }
-      /* line 54, ../sass/admin/admin_feedback.sass */
-      .feedback .feedback-main-text .feedback-text p {
-        font-size: 12px;
-        line-height: 20px;
-        color: #4c4c4c; }
-  /* line 58, ../sass/admin/admin_feedback.sass */
+      padding: 13px 45px 25px 13px;
+      font-size: 12px;
+      line-height: 20px;
+      color: #4c4c4c;
+      resize: none; }
+  /* line 61, ../sass/admin/admin_feedback.sass */
   .feedback .feedblack-buttons {
     text-align: right; }
-    /* line 60, ../sass/admin/admin_feedback.sass */
+    /* line 63, ../sass/admin/admin_feedback.sass */
     .feedback .feedblack-buttons .feedback-button {
       display: inline-block;
       font-size: 12px;
@@ -1961,10 +2052,10 @@ ul {
       outline: none;
       color: #ffffff;
       width: 150px; }
-    /* line 72, ../sass/admin/admin_feedback.sass */
+    /* line 75, ../sass/admin/admin_feedback.sass */
     .feedback .feedblack-buttons .locate {
       background: #65b545; }
-    /* line 74, ../sass/admin/admin_feedback.sass */
+    /* line 77, ../sass/admin/admin_feedback.sass */
     .feedback .feedblack-buttons .delete {
       background: #d64541; }
 
@@ -1995,7 +2086,7 @@ ul {
     padding-right: 10px;
     padding-top: 7px; }
   /* line 25, ../sass/admin/admin_news.sass */
-  .container-admin .content_header .content_header-button div {
+  .container-admin .content_header .content_header-button span {
     display: inline-block;
     vertical-align: top;
     padding-top: 7px; }
@@ -2106,12 +2197,12 @@ ul {
   /* line 112, ../sass/admin/admin_news.sass */
   .news-popup .news-popup-close {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 15px;
-    width: 10px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    background: url("../img/icon-close.svg") no-repeat; }
+    background: url("../img/icon-close.png") no-repeat; }
   /* line 121, ../sass/admin/admin_news.sass */
   .news-popup .news-popup-main label {
     font-size: 12px;
@@ -2122,8 +2213,8 @@ ul {
     background: #f7f9fc; }
     /* line 127, ../sass/admin/admin_news.sass */
     .news-popup .news-popup-main .news-popup-head p {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: #4c4c4c;
       padding: 15px 0;
       text-align: center; }
@@ -2182,11 +2273,12 @@ ul {
           outline: none;
           border: 1px solid #edeff2;
           border-radius: 5px;
-          margin-bottom: 30px; }
-    /* line 179, ../sass/admin/admin_news.sass */
+          margin-bottom: 30px;
+          resize: none; }
+    /* line 180, ../sass/admin/admin_news.sass */
     .news-popup .news-popup-main form .news--add-img {
       position: relative; }
-      /* line 181, ../sass/admin/admin_news.sass */
+      /* line 182, ../sass/admin/admin_news.sass */
       .news-popup .news-popup-main form .news--add-img input[type="file"] {
         position: absolute;
         top: 32px;
@@ -2196,13 +2288,13 @@ ul {
         opacity: 0;
         cursor: pointer;
         z-index: 2; }
-    /* line 190, ../sass/admin/admin_news.sass */
+    /* line 191, ../sass/admin/admin_news.sass */
     .news-popup .news-popup-main form .news__img {
       float: left;
       width: 140px;
       height: 100px;
       background-color: #f7f9fc; }
-    /* line 195, ../sass/admin/admin_news.sass */
+    /* line 196, ../sass/admin/admin_news.sass */
     .news-popup .news-popup-main form .button-load {
       float: left;
       position: relative;
@@ -2217,7 +2309,7 @@ ul {
       background: #ffffff;
       outline: none;
       text-align: left; }
-      /* line 209, ../sass/admin/admin_news.sass */
+      /* line 210, ../sass/admin/admin_news.sass */
       .news-popup .news-popup-main form .button-load:before {
         position: absolute;
         content: "";
@@ -2226,17 +2318,17 @@ ul {
         height: 14px;
         top: 10px;
         left: 14px; }
-    /* line 217, ../sass/admin/admin_news.sass */
+    /* line 218, ../sass/admin/admin_news.sass */
     .news-popup .news-popup-main form .news--add-btn {
       margin-top: 15px; }
-      /* line 219, ../sass/admin/admin_news.sass */
+      /* line 220, ../sass/admin/admin_news.sass */
       .news-popup .news-popup-main form .news--add-btn .link-clear {
         float: left;
         font-size: 12px;
         line-height: 12px;
         color: #999999;
         padding-top: 17px; }
-      /* line 225, ../sass/admin/admin_news.sass */
+      /* line 226, ../sass/admin/admin_news.sass */
       .news-popup .news-popup-main form .news--add-btn .news-popup-button {
         float: right;
         display: inline-block;
@@ -2252,7 +2344,7 @@ ul {
         background: #65b545;
         margin-bottom: 10px; }
 
-/* line 240, ../sass/admin/admin_news.sass */
+/* line 241, ../sass/admin/admin_news.sass */
 .news-edit-popup {
   display: none;
   width: 860px;
@@ -2263,41 +2355,41 @@ ul {
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   z-index: 2; }
-  /* line 250, ../sass/admin/admin_news.sass */
+  /* line 251, ../sass/admin/admin_news.sass */
   .news-edit-popup .news-edit-popup-close {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 15px;
-    width: 10px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    background: url("../img/icon-close.svg") no-repeat; }
-  /* line 259, ../sass/admin/admin_news.sass */
+    background: url("../img/icon-close.png") no-repeat; }
+  /* line 260, ../sass/admin/admin_news.sass */
   .news-edit-popup .news-popup-main label {
     font-size: 12px;
     line-height: 12px;
     color: #999999; }
-  /* line 263, ../sass/admin/admin_news.sass */
+  /* line 264, ../sass/admin/admin_news.sass */
   .news-edit-popup .news-popup-main .news-popup-head {
     background: #f7f9fc; }
-    /* line 265, ../sass/admin/admin_news.sass */
+    /* line 266, ../sass/admin/admin_news.sass */
     .news-edit-popup .news-popup-main .news-popup-head p {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: #4c4c4c;
       padding: 15px 0;
       text-align: center; }
-  /* line 271, ../sass/admin/admin_news.sass */
+  /* line 272, ../sass/admin/admin_news.sass */
   .news-edit-popup .news-popup-main form {
     padding: 10px 40px 35px 40px; }
-    /* line 273, ../sass/admin/admin_news.sass */
+    /* line 274, ../sass/admin/admin_news.sass */
     .news-edit-popup .news-popup-main form .column-form {
       -moz-placeholder-color: #4c4c4c;
       -ms-input-placeholder-color: #4c4c4c; }
-      /* line 274, ../sass/admin/admin_news.sass */
+      /* line 275, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .column-form p {
         text-align: left; }
-      /* line 276, ../sass/admin/admin_news.sass */
+      /* line 277, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .column-form input {
         font-size: 12px;
         line-height: 12px;
@@ -2307,31 +2399,31 @@ ul {
         border: 1px solid #edeff2;
         border-radius: 5px;
         margin-bottom: 15px; }
-      /* line 285, ../sass/admin/admin_news.sass */
+      /* line 286, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .column-form ::-webkit-input-placeholder {
         color: #4c4c4c; }
-      /* line 287, ../sass/admin/admin_news.sass */
+      /* line 288, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .column-form ::-moz-placeholder {
         color: #4c4c4c; }
-      /* line 293, ../sass/admin/admin_news.sass */
+      /* line 294, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .column-form .column-1 {
         float: left;
         width: 15%; }
-        /* line 296, ../sass/admin/admin_news.sass */
+        /* line 297, ../sass/admin/admin_news.sass */
         .news-edit-popup .news-popup-main form .column-form .column-1 input[id="date"] {
           width: 100%; }
-      /* line 298, ../sass/admin/admin_news.sass */
+      /* line 299, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .column-form .column-2 {
         float: right;
         width: 75%; }
-        /* line 301, ../sass/admin/admin_news.sass */
+        /* line 302, ../sass/admin/admin_news.sass */
         .news-edit-popup .news-popup-main form .column-form .column-2 input[id="header"] {
           width: 95%; }
-      /* line 303, ../sass/admin/admin_news.sass */
+      /* line 304, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .column-form .column-3 {
         float: left;
         width: 100%; }
-        /* line 306, ../sass/admin/admin_news.sass */
+        /* line 307, ../sass/admin/admin_news.sass */
         .news-edit-popup .news-popup-main form .column-form .column-3 textarea {
           width: 96%;
           min-height: 180px;
@@ -2342,11 +2434,12 @@ ul {
           outline: none;
           border: 1px solid #edeff2;
           border-radius: 5px;
-          margin-bottom: 30px; }
-    /* line 317, ../sass/admin/admin_news.sass */
+          margin-bottom: 30px;
+          resize: none; }
+    /* line 319, ../sass/admin/admin_news.sass */
     .news-edit-popup .news-popup-main form .news--add-img {
       position: relative; }
-      /* line 319, ../sass/admin/admin_news.sass */
+      /* line 321, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .news--add-img input[type="file"] {
         position: absolute;
         top: 32px;
@@ -2356,13 +2449,13 @@ ul {
         opacity: 0;
         cursor: pointer;
         z-index: 2; }
-    /* line 328, ../sass/admin/admin_news.sass */
+    /* line 330, ../sass/admin/admin_news.sass */
     .news-edit-popup .news-popup-main form .news__img {
       float: left;
       width: 140px;
       height: 100px;
       background-color: #f7f9fc; }
-    /* line 333, ../sass/admin/admin_news.sass */
+    /* line 335, ../sass/admin/admin_news.sass */
     .news-edit-popup .news-popup-main form .button-load {
       float: left;
       position: relative;
@@ -2377,7 +2470,7 @@ ul {
       background: #ffffff;
       outline: none;
       text-align: left; }
-      /* line 347, ../sass/admin/admin_news.sass */
+      /* line 349, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .button-load:before {
         position: absolute;
         content: "";
@@ -2386,17 +2479,17 @@ ul {
         height: 14px;
         top: 10px;
         left: 14px; }
-    /* line 355, ../sass/admin/admin_news.sass */
+    /* line 357, ../sass/admin/admin_news.sass */
     .news-edit-popup .news-popup-main form .news--add-btn {
       margin-top: 15px; }
-      /* line 357, ../sass/admin/admin_news.sass */
+      /* line 359, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .news--add-btn .link-clear {
         float: left;
         font-size: 12px;
         line-height: 12px;
         color: #999999;
         padding-top: 17px; }
-      /* line 363, ../sass/admin/admin_news.sass */
+      /* line 365, ../sass/admin/admin_news.sass */
       .news-edit-popup .news-popup-main form .news--add-btn .news-popup-button {
         float: right;
         display: inline-block;
@@ -2431,7 +2524,7 @@ ul {
   margin: 14px 0;
   vertical-align: middle; }
   /* line 19, ../sass/admin/admin_price.sass */
-  .container-admin .content_header .content_header-button-service div {
+  .container-admin .content_header .content_header-button-service span {
     display: inline-block;
     vertical-align: top;
     padding-top: 7px; }
@@ -2592,21 +2685,23 @@ ul {
         border: 1px solid #edeff2;
         padding: 14px 15px;
         border-radius: 5px;
-        color: #000; }
-        /* line 149, ../sass/admin/admin_price.sass */
+        color: #000;
+        resize: none; }
+        /* line 150, ../sass/admin/admin_price.sass */
         .edit_price .edit_price_content-body label input:focus,
         .edit_price .edit_price_content-body label textarea:focus {
           outline: none; }
-    /* line 151, ../sass/admin/admin_price.sass */
+    /* line 152, ../sass/admin/admin_price.sass */
     .edit_price .edit_price_content-body .edit_price-newPrice {
       width: 45%; }
-    /* line 153, ../sass/admin/admin_price.sass */
+    /* line 154, ../sass/admin/admin_price.sass */
     .edit_price .edit_price_content-body .edit_price-descr {
       height: 150px; }
-      /* line 155, ../sass/admin/admin_price.sass */
+      /* line 156, ../sass/admin/admin_price.sass */
       .edit_price .edit_price_content-body .edit_price-descr textarea {
-        height: 120px; }
-    /* line 158, ../sass/admin/admin_price.sass */
+        height: 120px;
+        resize: none; }
+    /* line 160, ../sass/admin/admin_price.sass */
     .edit_price .edit_price_content-body .form-submit-button {
       background: #65b545;
       color: #fff;
@@ -2684,7 +2779,7 @@ ul {
         line-height: 12px;
         color: #474747; }
       /* line 55, ../sass/admin/admin_settings.sass */
-      .settings .settings-column .settings-column-2 input[id="work-hours"] {
+      .settings .settings-column .settings-column-2 input.work-hours {
         width: 18px; }
       /* line 57, ../sass/admin/admin_settings.sass */
       .settings .settings-column .settings-column-2 input[id="car-wash"] {
@@ -2792,7 +2887,7 @@ ul {
         line-height: 12px;
         color: #474747; }
       /* line 145, ../sass/admin/admin_settings.sass */
-      .settings .settings-column .settings-column-3 input[id="work-hours"] {
+      .settings .settings-column .settings-column-3 input.work-hours-2 {
         width: 18px;
         margin-bottom: 130px; }
       /* line 148, ../sass/admin/admin_settings.sass */
@@ -2867,7 +2962,7 @@ ul {
       padding-right: 10px;
       padding-top: 7px; }
     /* line 37, ../sass/admin/admin_shop.sass */
-    .container-admin .content_header .content_header-button div {
+    .container-admin .content_header .content_header-button span {
       display: inline-block;
       vertical-align: top;
       padding-top: 7px; }
@@ -3033,7 +3128,7 @@ ul {
 .add_shop {
   display: none;
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3103,28 +3198,38 @@ ul {
             vertical-align: middle;
             margin-right: 10px; }
     /* line 235, ../sass/admin/admin_shop.sass */
-    .add_shop .add_shop_content-body label {
+    .add_shop .add_shop_content-body .label-change:nth-of-type(2n) {
+      margin-right: 1%; }
+    /* line 237, ../sass/admin/admin_shop.sass */
+    .add_shop .add_shop_content-body label:nth-of-type(2n+1) {
+      margin-right: 1%; }
+    /* line 239, ../sass/admin/admin_shop.sass */
+    .add_shop .add_shop_content-body label,
+    .add_shop .add_shop_content-body .label-change {
       width: 49%;
       display: inline-block;
       font-size: 14px;
       box-sizing: border-box;
       color: #999999; }
-      /* line 241, ../sass/admin/admin_shop.sass */
-      .add_shop .add_shop_content-body label:nth-of-type(2n+1) {
-        margin-right: 1%; }
-      /* line 243, ../sass/admin/admin_shop.sass */
+      /* line 247, ../sass/admin/admin_shop.sass */
       .add_shop .add_shop_content-body label .container-choise-category,
-      .add_shop .add_shop_content-body label .container-choise-un-category {
+      .add_shop .add_shop_content-body label .container-choise-un-category,
+      .add_shop .add_shop_content-body .label-change .container-choise-category,
+      .add_shop .add_shop_content-body .label-change .container-choise-un-category {
         position: relative; }
-      /* line 246, ../sass/admin/admin_shop.sass */
-      .add_shop .add_shop_content-body label .choise-category {
-        width: 188px; }
-      /* line 248, ../sass/admin/admin_shop.sass */
-      .add_shop .add_shop_content-body label .choise-un-category {
-        width: 190px; }
       /* line 250, ../sass/admin/admin_shop.sass */
       .add_shop .add_shop_content-body label .choise-category,
-      .add_shop .add_shop_content-body label .choise-un-category {
+      .add_shop .add_shop_content-body .label-change .choise-category {
+        width: 188px; }
+      /* line 252, ../sass/admin/admin_shop.sass */
+      .add_shop .add_shop_content-body label .choise-un-category,
+      .add_shop .add_shop_content-body .label-change .choise-un-category {
+        width: 190px; }
+      /* line 254, ../sass/admin/admin_shop.sass */
+      .add_shop .add_shop_content-body label .choise-category,
+      .add_shop .add_shop_content-body label .choise-un-category,
+      .add_shop .add_shop_content-body .label-change .choise-category,
+      .add_shop .add_shop_content-body .label-change .choise-un-category {
         position: relative;
         list-style-type: none;
         display: inline-block;
@@ -3137,9 +3242,11 @@ ul {
         border-radius: 4px;
         cursor: pointer;
         margin-right: 17px; }
-        /* line 264, ../sass/admin/admin_shop.sass */
+        /* line 268, ../sass/admin/admin_shop.sass */
         .add_shop .add_shop_content-body label .choise-category:after,
-        .add_shop .add_shop_content-body label .choise-un-category:after {
+        .add_shop .add_shop_content-body label .choise-un-category:after,
+        .add_shop .add_shop_content-body .label-change .choise-category:after,
+        .add_shop .add_shop_content-body .label-change .choise-un-category:after {
           content: "";
           position: absolute;
           top: 50%;
@@ -3149,21 +3256,27 @@ ul {
           width: 10px;
           height: 5px;
           background: url("../img/icon-select-arrow.png") no-repeat; }
-        /* line 274, ../sass/admin/admin_shop.sass */
+        /* line 278, ../sass/admin/admin_shop.sass */
         .add_shop .add_shop_content-body label .choise-category li,
-        .add_shop .add_shop_content-body label .choise-un-category li {
+        .add_shop .add_shop_content-body label .choise-un-category li,
+        .add_shop .add_shop_content-body .label-change .choise-category li,
+        .add_shop .add_shop_content-body .label-change .choise-un-category li {
           color: #4d4d4d;
           font-size: 14px;
           font-weight: 500; }
-      /* line 278, ../sass/admin/admin_shop.sass */
-      .add_shop .add_shop_content-body label .choise-category--down {
-        width: 203px; }
-      /* line 280, ../sass/admin/admin_shop.sass */
-      .add_shop .add_shop_content-body label .choise-un-category--down {
-        width: 205px; }
       /* line 282, ../sass/admin/admin_shop.sass */
       .add_shop .add_shop_content-body label .choise-category--down,
-      .add_shop .add_shop_content-body label .choise-un-category--down {
+      .add_shop .add_shop_content-body .label-change .choise-category--down {
+        width: 203px; }
+      /* line 284, ../sass/admin/admin_shop.sass */
+      .add_shop .add_shop_content-body label .choise-un-category--down,
+      .add_shop .add_shop_content-body .label-change .choise-un-category--down {
+        width: 205px; }
+      /* line 286, ../sass/admin/admin_shop.sass */
+      .add_shop .add_shop_content-body label .choise-category--down,
+      .add_shop .add_shop_content-body label .choise-un-category--down,
+      .add_shop .add_shop_content-body .label-change .choise-category--down,
+      .add_shop .add_shop_content-body .label-change .choise-un-category--down {
         display: none;
         position: absolute;
         top: 49px;
@@ -3174,43 +3287,56 @@ ul {
         border: 1px solid #edeff2;
         border-top: none;
         border-radius: 4px;
-        cursor: pointer; }
-        /* line 295, ../sass/admin/admin_shop.sass */
+        cursor: pointer;
+        height: 140px;
+        overflow: auto; }
+        /* line 301, ../sass/admin/admin_shop.sass */
         .add_shop .add_shop_content-body label .choise-category--down.active--category,
-        .add_shop .add_shop_content-body label .choise-un-category--down.active--category {
+        .add_shop .add_shop_content-body label .choise-un-category--down.active--category,
+        .add_shop .add_shop_content-body .label-change .choise-category--down.active--category,
+        .add_shop .add_shop_content-body .label-change .choise-un-category--down.active--category {
           display: inline-block; }
-        /* line 297, ../sass/admin/admin_shop.sass */
+        /* line 303, ../sass/admin/admin_shop.sass */
         .add_shop .add_shop_content-body label .choise-category--down li,
-        .add_shop .add_shop_content-body label .choise-un-category--down li {
+        .add_shop .add_shop_content-body label .choise-un-category--down li,
+        .add_shop .add_shop_content-body .label-change .choise-category--down li,
+        .add_shop .add_shop_content-body .label-change .choise-un-category--down li {
           padding-left: 15px;
           color: #4d4d4d;
           font-size: 14px;
           font-weight: 500; }
-          /* line 302, ../sass/admin/admin_shop.sass */
+          /* line 308, ../sass/admin/admin_shop.sass */
           .add_shop .add_shop_content-body label .choise-category--down li:hover,
-          .add_shop .add_shop_content-body label .choise-un-category--down li:hover {
+          .add_shop .add_shop_content-body label .choise-un-category--down li:hover,
+          .add_shop .add_shop_content-body .label-change .choise-category--down li:hover,
+          .add_shop .add_shop_content-body .label-change .choise-un-category--down li:hover {
             background-color: #a4afc0; }
-      /* line 304, ../sass/admin/admin_shop.sass */
+      /* line 310, ../sass/admin/admin_shop.sass */
       .add_shop .add_shop_content-body label input,
-      .add_shop .add_shop_content-body label textarea {
+      .add_shop .add_shop_content-body label textarea,
+      .add_shop .add_shop_content-body .label-change input,
+      .add_shop .add_shop_content-body .label-change textarea {
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #edeff2;
         padding: 14px 15px;
         border-radius: 5px;
         color: #000; }
-        /* line 312, ../sass/admin/admin_shop.sass */
+        /* line 318, ../sass/admin/admin_shop.sass */
         .add_shop .add_shop_content-body label input:focus,
-        .add_shop .add_shop_content-body label textarea:focus {
+        .add_shop .add_shop_content-body label textarea:focus,
+        .add_shop .add_shop_content-body .label-change input:focus,
+        .add_shop .add_shop_content-body .label-change textarea:focus {
           outline: none; }
-    /* line 314, ../sass/admin/admin_shop.sass */
+    /* line 320, ../sass/admin/admin_shop.sass */
     .add_shop .add_shop_content-body .add_shop-title,
     .add_shop .add_shop_content-body .add_shop-descr {
       width: 100%; }
-    /* line 318, ../sass/admin/admin_shop.sass */
+    /* line 324, ../sass/admin/admin_shop.sass */
     .add_shop .add_shop_content-body .add_shop-descr textarea {
-      height: 100px; }
-    /* line 320, ../sass/admin/admin_shop.sass */
+      height: 100px;
+      resize: none; }
+    /* line 327, ../sass/admin/admin_shop.sass */
     .add_shop .add_shop_content-body .form-submit-button {
       background: #65b545;
       color: #fff;
@@ -3221,11 +3347,11 @@ ul {
       font-size: 18px;
       margin-top: 20px; }
 
-/* line 330, ../sass/admin/admin_shop.sass */
+/* line 337, ../sass/admin/admin_shop.sass */
 .shop-add-category {
   display: none;
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3233,44 +3359,44 @@ ul {
   z-index: 2;
   background-color: #fefefe;
   width: 560px; }
-  /* line 341, ../sass/admin/admin_shop.sass */
+  /* line 348, ../sass/admin/admin_shop.sass */
   .shop-add-category .shop-add-category-close {
     position: absolute;
-    top: 15px;
+    top: 14px;
     right: 15px;
-    width: 10px;
-    height: 9px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
-    background: url("../img/icon-close.svg") no-repeat; }
-  /* line 350, ../sass/admin/admin_shop.sass */
+    background: url("../img/icon-close.png") no-repeat; }
+  /* line 357, ../sass/admin/admin_shop.sass */
   .shop-add-category .shop-add-category-main label {
     font-size: 12px;
     line-height: 12px;
     color: #999999; }
-  /* line 354, ../sass/admin/admin_shop.sass */
+  /* line 361, ../sass/admin/admin_shop.sass */
   .shop-add-category .shop-add-category-main .shop-add-category-head {
     background: #f7f9fc; }
-    /* line 356, ../sass/admin/admin_shop.sass */
+    /* line 363, ../sass/admin/admin_shop.sass */
     .shop-add-category .shop-add-category-main .shop-add-category-head p {
-      font-size: 12px;
-      line-height: 12px;
+      font-size: 14px;
+      line-height: 14px;
       color: #4c4c4c;
       padding: 15px 0;
       text-align: center; }
-  /* line 362, ../sass/admin/admin_shop.sass */
+  /* line 369, ../sass/admin/admin_shop.sass */
   .shop-add-category .shop-add-category-main .category-text {
     padding: 40px 110px 60px 110px; }
-    /* line 364, ../sass/admin/admin_shop.sass */
+    /* line 371, ../sass/admin/admin_shop.sass */
     .shop-add-category .shop-add-category-main .category-text .category-head {
       text-align: center;
       font-size: 0; }
-      /* line 367, ../sass/admin/admin_shop.sass */
+      /* line 374, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .category-head .category {
         padding: 0;
         margin: 0;
         margin-bottom: 30px;
         font-size: 0; }
-        /* line 372, ../sass/admin/admin_shop.sass */
+        /* line 379, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .category-head .category li {
           display: inline-block;
           width: 50%;
@@ -3283,15 +3409,15 @@ ul {
           padding: 0;
           padding-bottom: 20px;
           cursor: pointer; }
-        /* line 384, ../sass/admin/admin_shop.sass */
+        /* line 391, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .category-head .category .active-category {
           border-bottom: 2px solid #65b545;
           color: #4c4c4c; }
-    /* line 387, ../sass/admin/admin_shop.sass */
+    /* line 394, ../sass/admin/admin_shop.sass */
     .shop-add-category .shop-add-category-main .category-text .form {
       -moz-placeholder-color: #4c4c4c;
       -ms-input-placeholder-color: #4c4c4c; }
-      /* line 388, ../sass/admin/admin_shop.sass */
+      /* line 395, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form select {
         font-size: 12px;
         line-height: 12px;
@@ -3302,13 +3428,13 @@ ul {
         border-radius: 5px;
         width: 140px;
         margin-bottom: 10px; }
-      /* line 398, ../sass/admin/admin_shop.sass */
+      /* line 405, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form .container-choise-category {
         position: relative; }
-      /* line 400, ../sass/admin/admin_shop.sass */
+      /* line 407, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form .choise-category {
         width: 125px; }
-      /* line 402, ../sass/admin/admin_shop.sass */
+      /* line 409, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form .choise-category {
         position: relative;
         list-style-type: none;
@@ -3322,7 +3448,7 @@ ul {
         border-radius: 4px;
         cursor: pointer;
         margin-right: 17px; }
-        /* line 415, ../sass/admin/admin_shop.sass */
+        /* line 422, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .form .choise-category:after {
           content: "";
           position: absolute;
@@ -3333,20 +3459,18 @@ ul {
           width: 10px;
           height: 5px;
           background: url("../img/icon-select-arrow.png") no-repeat; }
-        /* line 425, ../sass/admin/admin_shop.sass */
+        /* line 432, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .form .choise-category li {
           color: #4d4d4d;
           font-size: 12px;
           font-weight: 500; }
-      /* line 429, ../sass/admin/admin_shop.sass */
+      /* line 436, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form .choise-category--down {
-        width: 140px; }
-      /* line 431, ../sass/admin/admin_shop.sass */
-      .shop-add-category .shop-add-category-main .category-text .form .choise-category--down {
-        display: none;
+        width: 140px;
+        height: 156px;
         position: absolute;
+        top: -1000000px;
         z-index: 3;
-        top: 39px;
         left: 0;
         line-height: 39px;
         list-style-type: none;
@@ -3354,20 +3478,21 @@ ul {
         border: 1px solid #edeff2;
         border-top: none;
         border-radius: 4px;
-        cursor: pointer; }
-        /* line 444, ../sass/admin/admin_shop.sass */
+        cursor: pointer;
+        overflow: auto; }
+        /* line 451, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .form .choise-category--down.active--category {
-          display: inline-block; }
-        /* line 446, ../sass/admin/admin_shop.sass */
+          top: 39px; }
+        /* line 453, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .form .choise-category--down li {
           padding-left: 15px;
           color: #4d4d4d;
           font-size: 12px;
           font-weight: 500; }
-          /* line 451, ../sass/admin/admin_shop.sass */
+          /* line 458, ../sass/admin/admin_shop.sass */
           .shop-add-category .shop-add-category-main .category-text .form .choise-category--down li:hover {
             background-color: #a4afc0; }
-      /* line 453, ../sass/admin/admin_shop.sass */
+      /* line 460, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form input[type="text"] {
         font-size: 14px;
         line-height: 14px;
@@ -3379,37 +3504,37 @@ ul {
         margin-bottom: 20px;
         color: #4c4c4c;
         width: 95%; }
-      /* line 464, ../sass/admin/admin_shop.sass */
+      /* line 471, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form ::-webkit-input-placeholder {
         color: #4c4c4c; }
-      /* line 466, ../sass/admin/admin_shop.sass */
+      /* line 473, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form ::-moz-placeholder {
         color: #4c4c4c; }
-      /* line 472, ../sass/admin/admin_shop.sass */
+      /* line 479, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form .border-category {
         border-bottom: 1px solid #dddddd;
         margin-bottom: 30px; }
-        /* line 475, ../sass/admin/admin_shop.sass */
+        /* line 482, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form-padding {
           padding-top: 5px; }
-        /* line 477, ../sass/admin/admin_shop.sass */
+        /* line 484, ../sass/admin/admin_shop.sass */
         .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form {
           float: left;
           margin-right: 28px; }
-          /* line 480, ../sass/admin/admin_shop.sass */
+          /* line 487, ../sass/admin/admin_shop.sass */
           .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form:last-child {
             margin-right: 0; }
-          /* line 482, ../sass/admin/admin_shop.sass */
+          /* line 489, ../sass/admin/admin_shop.sass */
           .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form label {
             display: inline-block;
             margin-left: 5px; }
-          /* line 485, ../sass/admin/admin_shop.sass */
+          /* line 492, ../sass/admin/admin_shop.sass */
           .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form input[type="text"] {
             width: 50px; }
-          /* line 487, ../sass/admin/admin_shop.sass */
+          /* line 494, ../sass/admin/admin_shop.sass */
           .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form input[type="radio"] {
             display: none; }
-          /* line 489, ../sass/admin/admin_shop.sass */
+          /* line 496, ../sass/admin/admin_shop.sass */
           .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form input[type="radio"] + label {
             position: relative;
             padding-left: 20px;
@@ -3417,7 +3542,7 @@ ul {
             vertical-align: middle;
             cursor: pointer;
             line-height: 28px; }
-            /* line 496, ../sass/admin/admin_shop.sass */
+            /* line 503, ../sass/admin/admin_shop.sass */
             .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form input[type="radio"] + label:before {
               content: "";
               display: block;
@@ -3427,10 +3552,10 @@ ul {
               width: 16px;
               height: 16px;
               background: url("../img/icon-radio-box.png") no-repeat; }
-          /* line 506, ../sass/admin/admin_shop.sass */
+          /* line 513, ../sass/admin/admin_shop.sass */
           .shop-add-category .shop-add-category-main .category-text .form .border-category .radio-form input[type="radio"]:checked + label:before {
             background: url("../img/icon-radio-checked-box.png") no-repeat; }
-      /* line 508, ../sass/admin/admin_shop.sass */
+      /* line 515, ../sass/admin/admin_shop.sass */
       .shop-add-category .shop-add-category-main .category-text .form .button-add-category {
         display: inline-block;
         font-size: 12px;
@@ -3444,11 +3569,11 @@ ul {
         width: 160px;
         background: #65b545; }
 
-/* line 521, ../sass/admin/admin_shop.sass */
+/* line 528, ../sass/admin/admin_shop.sass */
 .edit_shop {
   display: none;
   background: #ffffff;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3457,13 +3582,13 @@ ul {
   background-color: #fefefe;
   width: 560px;
   padding-bottom: 70px; }
-  /* line 533, ../sass/admin/admin_shop.sass */
+  /* line 540, ../sass/admin/admin_shop.sass */
   .edit_shop .edit_shop_content-header {
     background: #f7f9fc;
     text-align: center;
     position: relative;
     padding: 13px 0; }
-    /* line 538, ../sass/admin/admin_shop.sass */
+    /* line 545, ../sass/admin/admin_shop.sass */
     .edit_shop .edit_shop_content-header .modal-close {
       position: absolute;
       right: 20px;
@@ -3471,29 +3596,29 @@ ul {
       width: 10px;
       height: 10px;
       cursor: pointer; }
-  /* line 545, ../sass/admin/admin_shop.sass */
+  /* line 552, ../sass/admin/admin_shop.sass */
   .edit_shop .edit_shop_content-body {
     width: 75%;
     margin: 0 auto; }
-    /* line 548, ../sass/admin/admin_shop.sass */
+    /* line 555, ../sass/admin/admin_shop.sass */
     .edit_shop .edit_shop_content-body .form-image {
       display: inline-block;
       width: 100%;
       font-size: 0;
       padding-top: 30px;
       padding-bottom: 20px; }
-      /* line 554, ../sass/admin/admin_shop.sass */
+      /* line 561, ../sass/admin/admin_shop.sass */
       .edit_shop .edit_shop_content-body .form-image .load-image {
         display: inline-block;
         width: 55%; }
-      /* line 557, ../sass/admin/admin_shop.sass */
+      /* line 564, ../sass/admin/admin_shop.sass */
       .edit_shop .edit_shop_content-body .form-image .load-button {
         display: inline-block;
         width: 45%;
         vertical-align: top;
         padding-top: 40px;
         position: relative; }
-        /* line 563, ../sass/admin/admin_shop.sass */
+        /* line 570, ../sass/admin/admin_shop.sass */
         .edit_shop .edit_shop_content-body .form-image .load-button input[type="file"] {
           position: absolute;
           top: 40px;
@@ -3501,7 +3626,7 @@ ul {
           height: 44px;
           opacity: 0;
           cursor: pointer; }
-        /* line 570, ../sass/admin/admin_shop.sass */
+        /* line 577, ../sass/admin/admin_shop.sass */
         .edit_shop .edit_shop_content-body .form-image .load-button button {
           background: #fff;
           padding: 10px 15px;
@@ -3509,34 +3634,44 @@ ul {
           border-radius: 5px;
           width: 100%;
           font-size: 14px; }
-          /* line 577, ../sass/admin/admin_shop.sass */
+          /* line 584, ../sass/admin/admin_shop.sass */
           .edit_shop .edit_shop_content-body .form-image .load-button button .upload-icon {
             display: inline-block;
             vertical-align: middle;
             margin-right: 10px; }
-    /* line 581, ../sass/admin/admin_shop.sass */
-    .edit_shop .edit_shop_content-body label {
+    /* line 588, ../sass/admin/admin_shop.sass */
+    .edit_shop .edit_shop_content-body .label-change:nth-of-type(2n) {
+      margin-right: 1%; }
+    /* line 590, ../sass/admin/admin_shop.sass */
+    .edit_shop .edit_shop_content-body label:nth-of-type(2n+1) {
+      margin-right: 1%; }
+    /* line 592, ../sass/admin/admin_shop.sass */
+    .edit_shop .edit_shop_content-body label,
+    .edit_shop .edit_shop_content-body .label-change {
       width: 49%;
       display: inline-block;
       font-size: 14px;
       box-sizing: border-box;
       color: #999999; }
-      /* line 587, ../sass/admin/admin_shop.sass */
-      .edit_shop .edit_shop_content-body label:nth-of-type(2n+1) {
-        margin-right: 1%; }
-      /* line 589, ../sass/admin/admin_shop.sass */
+      /* line 599, ../sass/admin/admin_shop.sass */
       .edit_shop .edit_shop_content-body label .container-choise-category,
-      .edit_shop .edit_shop_content-body label .container-choise-un-category {
+      .edit_shop .edit_shop_content-body label .container-choise-un-category,
+      .edit_shop .edit_shop_content-body .label-change .container-choise-category,
+      .edit_shop .edit_shop_content-body .label-change .container-choise-un-category {
         position: relative; }
-      /* line 592, ../sass/admin/admin_shop.sass */
-      .edit_shop .edit_shop_content-body label .choise-category {
-        width: 188px; }
-      /* line 594, ../sass/admin/admin_shop.sass */
-      .edit_shop .edit_shop_content-body label .choise-un-category {
-        width: 190px; }
-      /* line 596, ../sass/admin/admin_shop.sass */
+      /* line 602, ../sass/admin/admin_shop.sass */
       .edit_shop .edit_shop_content-body label .choise-category,
-      .edit_shop .edit_shop_content-body label .choise-un-category {
+      .edit_shop .edit_shop_content-body .label-change .choise-category {
+        width: 188px; }
+      /* line 604, ../sass/admin/admin_shop.sass */
+      .edit_shop .edit_shop_content-body label .choise-un-category,
+      .edit_shop .edit_shop_content-body .label-change .choise-un-category {
+        width: 190px; }
+      /* line 606, ../sass/admin/admin_shop.sass */
+      .edit_shop .edit_shop_content-body label .choise-category,
+      .edit_shop .edit_shop_content-body label .choise-un-category,
+      .edit_shop .edit_shop_content-body .label-change .choise-category,
+      .edit_shop .edit_shop_content-body .label-change .choise-un-category {
         position: relative;
         list-style-type: none;
         display: inline-block;
@@ -3549,9 +3684,11 @@ ul {
         border-radius: 4px;
         cursor: pointer;
         margin-right: 17px; }
-        /* line 610, ../sass/admin/admin_shop.sass */
+        /* line 620, ../sass/admin/admin_shop.sass */
         .edit_shop .edit_shop_content-body label .choise-category:after,
-        .edit_shop .edit_shop_content-body label .choise-un-category:after {
+        .edit_shop .edit_shop_content-body label .choise-un-category:after,
+        .edit_shop .edit_shop_content-body .label-change .choise-category:after,
+        .edit_shop .edit_shop_content-body .label-change .choise-un-category:after {
           content: "";
           position: absolute;
           top: 50%;
@@ -3561,21 +3698,27 @@ ul {
           width: 10px;
           height: 5px;
           background: url("../img/icon-select-arrow.png") no-repeat; }
-        /* line 620, ../sass/admin/admin_shop.sass */
+        /* line 630, ../sass/admin/admin_shop.sass */
         .edit_shop .edit_shop_content-body label .choise-category li,
-        .edit_shop .edit_shop_content-body label .choise-un-category li {
+        .edit_shop .edit_shop_content-body label .choise-un-category li,
+        .edit_shop .edit_shop_content-body .label-change .choise-category li,
+        .edit_shop .edit_shop_content-body .label-change .choise-un-category li {
           color: #4d4d4d;
           font-size: 14px;
           font-weight: 500; }
-      /* line 624, ../sass/admin/admin_shop.sass */
-      .edit_shop .edit_shop_content-body label .choise-category--down {
-        width: 203px; }
-      /* line 626, ../sass/admin/admin_shop.sass */
-      .edit_shop .edit_shop_content-body label .choise-un-category--down {
-        width: 205px; }
-      /* line 628, ../sass/admin/admin_shop.sass */
+      /* line 634, ../sass/admin/admin_shop.sass */
       .edit_shop .edit_shop_content-body label .choise-category--down,
-      .edit_shop .edit_shop_content-body label .choise-un-category--down {
+      .edit_shop .edit_shop_content-body .label-change .choise-category--down {
+        width: 203px; }
+      /* line 636, ../sass/admin/admin_shop.sass */
+      .edit_shop .edit_shop_content-body label .choise-un-category--down,
+      .edit_shop .edit_shop_content-body .label-change .choise-un-category--down {
+        width: 205px; }
+      /* line 638, ../sass/admin/admin_shop.sass */
+      .edit_shop .edit_shop_content-body label .choise-category--down,
+      .edit_shop .edit_shop_content-body label .choise-un-category--down,
+      .edit_shop .edit_shop_content-body .label-change .choise-category--down,
+      .edit_shop .edit_shop_content-body .label-change .choise-un-category--down {
         display: none;
         position: absolute;
         top: 49px;
@@ -3586,41 +3729,51 @@ ul {
         border: 1px solid #edeff2;
         border-top: none;
         border-radius: 4px;
-        cursor: pointer; }
-        /* line 641, ../sass/admin/admin_shop.sass */
+        cursor: pointer;
+        height: 140px;
+        overflow: auto; }
+        /* line 653, ../sass/admin/admin_shop.sass */
         .edit_shop .edit_shop_content-body label .choise-category--down.active--category,
-        .edit_shop .edit_shop_content-body label .choise-un-category--down.active--category {
+        .edit_shop .edit_shop_content-body label .choise-un-category--down.active--category,
+        .edit_shop .edit_shop_content-body .label-change .choise-category--down.active--category,
+        .edit_shop .edit_shop_content-body .label-change .choise-un-category--down.active--category {
           display: inline-block; }
-        /* line 643, ../sass/admin/admin_shop.sass */
+        /* line 655, ../sass/admin/admin_shop.sass */
         .edit_shop .edit_shop_content-body label .choise-category--down li,
-        .edit_shop .edit_shop_content-body label .choise-un-category--down li {
+        .edit_shop .edit_shop_content-body label .choise-un-category--down li,
+        .edit_shop .edit_shop_content-body .label-change .choise-category--down li,
+        .edit_shop .edit_shop_content-body .label-change .choise-un-category--down li {
           padding-left: 15px;
           color: #4d4d4d;
           font-size: 14px;
           font-weight: 500; }
-          /* line 648, ../sass/admin/admin_shop.sass */
+          /* line 660, ../sass/admin/admin_shop.sass */
           .edit_shop .edit_shop_content-body label .choise-category--down li:hover,
-          .edit_shop .edit_shop_content-body label .choise-un-category--down li:hover {
+          .edit_shop .edit_shop_content-body label .choise-un-category--down li:hover,
+          .edit_shop .edit_shop_content-body .label-change .choise-category--down li:hover,
+          .edit_shop .edit_shop_content-body .label-change .choise-un-category--down li:hover {
             background-color: #a4afc0; }
-      /* line 650, ../sass/admin/admin_shop.sass */
-      .edit_shop .edit_shop_content-body label input {
+      /* line 662, ../sass/admin/admin_shop.sass */
+      .edit_shop .edit_shop_content-body label input,
+      .edit_shop .edit_shop_content-body .label-change input {
         width: 100%;
         box-sizing: border-box;
         border: 1px solid #edeff2;
         padding: 14px 15px;
         border-radius: 5px;
         color: #000; }
-        /* line 657, ../sass/admin/admin_shop.sass */
-        .edit_shop .edit_shop_content-body label input:focus {
+        /* line 669, ../sass/admin/admin_shop.sass */
+        .edit_shop .edit_shop_content-body label input:focus,
+        .edit_shop .edit_shop_content-body .label-change input:focus {
           outline: none; }
-    /* line 659, ../sass/admin/admin_shop.sass */
+    /* line 671, ../sass/admin/admin_shop.sass */
     .edit_shop .edit_shop_content-body .edit_shop-title,
     .edit_shop .edit_shop_content-body .edit_shop-descr {
       width: 100%; }
-    /* line 663, ../sass/admin/admin_shop.sass */
+    /* line 675, ../sass/admin/admin_shop.sass */
     .edit_shop .edit_shop_content-body .edit_shop-descr input {
       height: 120px; }
-    /* line 665, ../sass/admin/admin_shop.sass */
+    /* line 677, ../sass/admin/admin_shop.sass */
     .edit_shop .edit_shop_content-body .form-submit-button {
       background: #65b545;
       color: #fff;
@@ -3655,7 +3808,7 @@ ul {
     padding-right: 10px;
     padding-top: 7px; }
   /* line 23, ../sass/admin/admin_slider.sass */
-  .container-admin .content_header .content_header-button div {
+  .container-admin .content_header .content_header-button span {
     display: inline-block;
     vertical-align: top;
     padding-top: 7px; }
@@ -3761,7 +3914,7 @@ ul {
 /* line 105, ../sass/admin/admin_slider.sass */
 .add_slider {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3863,11 +4016,12 @@ ul {
         border: 1px solid #edeff2;
         padding: 14px 15px;
         border-radius: 5px;
-        color: #000; }
-        /* line 195, ../sass/admin/admin_slider.sass */
+        color: #000;
+        resize: none; }
+        /* line 196, ../sass/admin/admin_slider.sass */
         .add_slider .add_slider_content-body .add_slider-descr textarea:focus {
           outline: none; }
-    /* line 197, ../sass/admin/admin_slider.sass */
+    /* line 198, ../sass/admin/admin_slider.sass */
     .add_slider .add_slider_content-body .form-submit-button {
       background: #65b545;
       color: #fff;
@@ -3878,10 +4032,10 @@ ul {
       font-size: 18px;
       margin-top: 20px; }
 
-/* line 207, ../sass/admin/admin_slider.sass */
+/* line 208, ../sass/admin/admin_slider.sass */
 .edit_slider {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3890,13 +4044,13 @@ ul {
   background-color: #fefefe;
   width: 560px;
   padding-bottom: 70px; }
-  /* line 218, ../sass/admin/admin_slider.sass */
+  /* line 219, ../sass/admin/admin_slider.sass */
   .edit_slider .edit_slider_content-header {
     background: #f7f9fc;
     text-align: center;
     position: relative;
     padding: 13px 0; }
-    /* line 223, ../sass/admin/admin_slider.sass */
+    /* line 224, ../sass/admin/admin_slider.sass */
     .edit_slider .edit_slider_content-header .modal-close {
       position: absolute;
       right: 20px;
@@ -3904,35 +4058,35 @@ ul {
       width: 10px;
       height: 10px;
       cursor: pointer; }
-  /* line 230, ../sass/admin/admin_slider.sass */
+  /* line 231, ../sass/admin/admin_slider.sass */
   .edit_slider .edit_slider_content-body {
     width: 75%;
     margin: 0 auto;
     padding-top: 30px; }
-    /* line 234, ../sass/admin/admin_slider.sass */
+    /* line 235, ../sass/admin/admin_slider.sass */
     .edit_slider .edit_slider_content-body .form-image {
       display: inline-block;
       width: 100%;
       font-size: 0;
       margin-bottom: 30px; }
-      /* line 239, ../sass/admin/admin_slider.sass */
+      /* line 240, ../sass/admin/admin_slider.sass */
       .edit_slider .edit_slider_content-body .form-image .load-image {
         display: inline-block;
         width: 170px;
         margin-right: 50px; }
-        /* line 243, ../sass/admin/admin_slider.sass */
+        /* line 244, ../sass/admin/admin_slider.sass */
         .edit_slider .edit_slider_content-body .form-image .load-image img {
           width: 170px;
           height: 155px;
           background-color: #f7f9fc; }
-      /* line 247, ../sass/admin/admin_slider.sass */
+      /* line 248, ../sass/admin/admin_slider.sass */
       .edit_slider .edit_slider_content-body .form-image .load-button {
         display: inline-block;
         width: 40%;
         vertical-align: top;
         margin-top: 55px;
         position: relative; }
-        /* line 253, ../sass/admin/admin_slider.sass */
+        /* line 254, ../sass/admin/admin_slider.sass */
         .edit_slider .edit_slider_content-body .form-image .load-button input[type="file"] {
           position: absolute;
           top: 0;
@@ -3940,7 +4094,7 @@ ul {
           height: 44px;
           opacity: 0;
           cursor: pointer; }
-        /* line 260, ../sass/admin/admin_slider.sass */
+        /* line 261, ../sass/admin/admin_slider.sass */
         .edit_slider .edit_slider_content-body .form-image .load-button button {
           background: #fff;
           padding: 10px 15px;
@@ -3948,22 +4102,22 @@ ul {
           border-radius: 5px;
           width: 100%;
           font-size: 14px; }
-          /* line 267, ../sass/admin/admin_slider.sass */
+          /* line 268, ../sass/admin/admin_slider.sass */
           .edit_slider .edit_slider_content-body .form-image .load-button button .upload-icon {
             display: inline-block;
             vertical-align: middle;
             margin-right: 10px; }
-    /* line 271, ../sass/admin/admin_slider.sass */
+    /* line 272, ../sass/admin/admin_slider.sass */
     .edit_slider .edit_slider_content-body label {
       width: 49%;
       display: inline-block;
       font-size: 14px;
       box-sizing: border-box;
       color: #999999; }
-      /* line 277, ../sass/admin/admin_slider.sass */
+      /* line 278, ../sass/admin/admin_slider.sass */
       .edit_slider .edit_slider_content-body label:nth-of-type(2n) {
         margin-right: 1%; }
-      /* line 279, ../sass/admin/admin_slider.sass */
+      /* line 280, ../sass/admin/admin_slider.sass */
       .edit_slider .edit_slider_content-body label input {
         width: 100%;
         box-sizing: border-box;
@@ -3971,14 +4125,14 @@ ul {
         padding: 14px 15px;
         border-radius: 5px;
         color: #000; }
-        /* line 286, ../sass/admin/admin_slider.sass */
+        /* line 287, ../sass/admin/admin_slider.sass */
         .edit_slider .edit_slider_content-body label input:focus {
           outline: none; }
-    /* line 288, ../sass/admin/admin_slider.sass */
+    /* line 289, ../sass/admin/admin_slider.sass */
     .edit_slider .edit_slider_content-body .edit_slider-descr {
       width: 100% !important;
       margin-bottom: 20px; }
-      /* line 291, ../sass/admin/admin_slider.sass */
+      /* line 292, ../sass/admin/admin_slider.sass */
       .edit_slider .edit_slider_content-body .edit_slider-descr textarea {
         height: 100px;
         width: 100%;
@@ -3986,11 +4140,12 @@ ul {
         border: 1px solid #edeff2;
         padding: 14px 15px;
         border-radius: 5px;
-        color: #000; }
-        /* line 299, ../sass/admin/admin_slider.sass */
+        color: #000;
+        resize: none; }
+        /* line 301, ../sass/admin/admin_slider.sass */
         .edit_slider .edit_slider_content-body .edit_slider-descr textarea:focus {
           outline: none; }
-    /* line 301, ../sass/admin/admin_slider.sass */
+    /* line 303, ../sass/admin/admin_slider.sass */
     .edit_slider .edit_slider_content-body .form-submit-button {
       background: #65b545;
       color: #fff;
@@ -4098,7 +4253,7 @@ ul {
     padding-right: 10px;
     padding-top: 7px; }
   /* line 22, ../sass/admin/admin_users.sass */
-  .content_header .content_header-add div {
+  .content_header .content_header-add span {
     display: inline-block;
     vertical-align: top;
     padding-top: 9px; }
